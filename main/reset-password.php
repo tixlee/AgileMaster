@@ -52,7 +52,7 @@ if(isset($_POST['change']))
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-7">
-            <img src="../resources/images/loginn.png" alt="login" class="login-card-img">
+            <img src="../resources/images/forgot.png" alt="login" class="login-card-img">
           </div>
           <div class="col-md-5">
             <div class="card-body">

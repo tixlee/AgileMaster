@@ -42,7 +42,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html"><img src="resources/images/logo.png" alt=""></a></h1>
+          <h1 class="logo mr-auto"><a href="index.php"><img src="resources/images/logo.png" alt=""></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="resources/images/logo.png" alt=""></a>-->
 

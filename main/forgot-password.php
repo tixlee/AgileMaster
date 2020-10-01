@@ -50,7 +50,7 @@ if(isset($_POST['next'])){
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-7">
-            <img src="../resources/images/loginn.png" alt="login" class="login-card-img">
+            <img src="../resources/images/forgot.png" alt="login" class="login-card-img">
           </div>
           <div class="col-md-5">
             <div class="card-body">
@@ -67,9 +67,9 @@ if(isset($_POST['next'])){
                       
                   </div>
                   
-                  <input type="submit" name="next" id="login" class="btn btn-block login-btn mb-4" value="NEXT">
+                  <input type="submit" name="next" id="login" class="btn btn-block login-btn mb-4" value="Reset Password">
                 </form>
-                <p class="login-card-footer-text">Already have anaccount? <a href="login.php" class="text-reset">Login here</a></p>
+                <p class="login-card-footer-text">Return to <a href="login.php" class="text-reset"><strong>Login</strong></a></p>
                 
             </div>
           </div>

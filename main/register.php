@@ -99,7 +99,7 @@ if(isset($_POST['create'])){
                   
                   <input type="submit" name="create" id="login" class="btn btn-block login-btn mb-4" value="Create My Account">
                 </form>
-                <p class="login-card-footer-text">Already have an account? <a href="../main/login.php" class="text-reset">Login here</a></p>
+                <p class="login-card-footer-text">Already have an account? <a href="../main/login.php" class="text-reset"><strong>Login here</strong></a></p>
                 
             </div>
           </div>
