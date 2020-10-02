@@ -46,6 +46,16 @@ INSERT INTO `users` (`user_id`, `name`, `email`, `password`, `role`) VALUES
 (4, 'Jason', 'jason@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'project member'),
 (5, 'tarek', 'tarek@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'project member');
 
+
+CREATE TABLE `contactusform` (
+  `contact_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `comment` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 --
 -- Indexes for dumped tables
 --
@@ -56,6 +66,14 @@ INSERT INTO `users` (`user_id`, `name`, `email`, `password`, `role`) VALUES
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
+
+--
+-- Indexes for table `poll`
+--
+ALTER TABLE `contactusform`
+  ADD PRIMARY KEY (`contact_id`);
+
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -64,7 +82,14 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  
+--
+-- AUTO_INCREMENT for table `poll`
+--
+ALTER TABLE `contactusform`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

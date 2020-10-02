@@ -16,6 +16,16 @@ function insert_user($name, $email, $password)
 	return $result;
 }
 
+//Contact Us Form
+
+
+function insert_contactus($name, $email, $subject, $comment)
+{
+	global $conn;
+	$result = mysqli_query($conn, "INSERT INTO `contactusform` (`name`, `email`, `subject`, `comment`) VALUES ('$name', '$email', '$subject', '$comment')");
+
+	return $result;
+}
 
 
 ?>
