@@ -85,8 +85,8 @@ include_once 'helpers/module.php';
         <div class="col-xl-10">
           <div class="row">
             <div class="col-xl-5">
-              <h1>Better digital experience with Presento</h1>
-              <h2>We are team of talanted designers making websites with Bootstrap</h2>
+              <h1>Better platform with better teamwork</h1>
+              <h2>Agile Master simplifies the process of working with team members</h2>
               <a href="main/register.php" class="btn-get-started scrollto">Get Started</a>
             </div>
           </div>
@@ -125,9 +125,9 @@ include_once 'helpers/module.php';
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch">
             <div class="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Agile Master manage everytings in one workspace</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Supports any agile methodology, manage all your agile software development projects from a single workspace.
               </p>
               <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
             </div>
@@ -354,28 +354,28 @@ include_once 'helpers/module.php';
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <i class="icofont-computer"></i>
               <h4><a href="#">Task Management and Project Tracking</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p>The teams can track tasks from the beginning, set deadlines and assigning to the right people. It ensures the project stay on track and get completed on time</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <i class="icofont-chart-bar-graph"></i>
               <h4><a href="#">Easy Organization with Labeling, Tags, and Comments</a></h4>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <p>Add comment on the project and you will know what should be changed or improved. Commented info and date/time will be displayed</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <i class="icofont-image"></i>
-              <h4><a href="#">Visualize project progress with Gantt charts</a></h4>
-              <p>View data as a map, calendar, timeline, kanban, and more</p>
+              <h4><a href="#">Capture Timeline and Sprints</a></h4>
+              <p>Capturing the timelines and sprints for the teamwork on the project. Sprint planning meetings determine what the team should complete in the coming sprint from the list of work to be done</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <i class="icofont-settings"></i>
               <h4><a href="#">Progress Meter Checklist</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p>Tells you what's being worked on, who's working on what, and which part is in a process. A white board, filled with notes and its for you and your team</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
@@ -389,7 +389,7 @@ include_once 'helpers/module.php';
             <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
               <i class="icofont-tasks-alt"></i>
               <h4><a href="#">Manage complex projects</a></h4>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <p>Be flexible, create more visibility. It help you manage projects from start to finish</p>
             </div>
           </div>
         </div>
@@ -643,7 +643,7 @@ include_once 'helpers/module.php';
 
         <div class="section-title">
           <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <p>Find a pricing plan that is right for you. Try first and upgrade later. We hope to hear that our pricing is amazing.</p>
         </div>
 
         <div class="row">
@@ -653,11 +653,11 @@ include_once 'helpers/module.php';
               <h3>Free</h3>
               <h4><sup>$</sup>0<span> / month</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>5 team members</li>
+                <li>Time tracking</li>
+                <li>Add comment</li>
+                <li class="na">Bug testing, bug reporting, bug fixing</li>
+                <li class="na">Generate Report</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Buy Now</a>
@@ -670,11 +670,11 @@ include_once 'helpers/module.php';
               <h3>Business</h3>
               <h4><sup>$</sup>19<span> / month</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>20 team members</li>
+                <li>Time tracking</li>
+                <li>Add comment</li>
+                <li>Bug testing, bug reporting, bug fixing</li>
+                <li class="na">Generate Report</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Buy Now</a>
@@ -687,11 +687,11 @@ include_once 'helpers/module.php';
               <h3>Developer</h3>
               <h4><sup>$</sup>29<span> / month</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>unlimited team members</li>
+                <li>Time tracking</li>
+                <li>Add comment</li>
+                <li>Bug testing, bug reporting, bug fixing</li>
+                <li>Generate Report</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Buy Now</a>
