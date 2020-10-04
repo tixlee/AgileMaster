@@ -56,6 +56,17 @@ CREATE TABLE `contactusform` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+
+CREATE TABLE `file_storage` (
+  `storage_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `date_uploaded` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- --------------------------------------------------------
+
 --
 -- Indexes for dumped tables
 --
@@ -74,6 +85,14 @@ ALTER TABLE `contactusform`
   ADD PRIMARY KEY (`contact_id`);
 
 
+
+--
+-- Indexes for table `file_storage`
+--
+ALTER TABLE `file_storage`
+  ADD PRIMARY KEY (`storage_id`);
+
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -89,6 +108,13 @@ ALTER TABLE `users`
 --
 ALTER TABLE `contactusform`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT;
+  
+--
+-- AUTO_INCREMENT for table `file_storage`
+--
+ALTER TABLE `file_storage`
+  MODIFY `storage_id` int(11) NOT NULL AUTO_INCREMENT;
+
 
 COMMIT;
 

@@ -1,102 +1,84 @@
-<nav class="sidenav">
-	<?php
-        $url= $_SERVER['REQUEST_URI']; 
-        $positionperiod= strpos($url, ".");
-        $extensionremoved= substr($url, 0, $positionperiod);
-        $positionslash= strrpos($extensionremoved, "/");
-        $file= substr($extensionremoved, $positionslash + 1);
-        if(isset($_GET['category'])){
-            $category= $_GET['category'];
-        } else {
-            $category= '';
-        }
-        if(isset($_GET['role'])){
-            $role= $_GET['role'];
-        }
-    ?>
-    <div class="sidenav-top">
-    <div class="logo-container">
-        <a href="../admin/dashboard.php" id="logo-link">
-            <img src="../resources/images/logo.png" class="logo-top-nav">
+
+<!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        
+        <div class="sidebar-brand-icon mx-3">Agile Master</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard.php">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      
+         <li class="nav-item">
+            <a href="projects.php" class="nav-link">
+              <i class="fas fa-project-diagram"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a href="board.php" class="nav-link">
+              <i class="fab fa-trello"></i>
+              <span>Board</span>
+            </a>
+          </li>
+		  
+        <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-users"></i>
+          <span>Members</span>
         </a>
-    </div>
-	<?php
-        if ($file=="dashboard" || $file=="current_dashboard_file" || $file=="archive_dashboard_file")
-            echo '<a href="../admin/dashboard.php" id="active-page">Dashboard</a>';
-        else
-            echo '<a href="../admin/dashboard.php">Dashboard</a>';
-
-        if ($file=="resume" || $file=="new_resume" || $file=="view_resume")
-            echo '<a href="../admin/resume.php" id="active-page">Resume</a>';
-        else
-            echo '<a href="../admin/resume.php">Resume</a>';
-
-         if ($file=="applications")
-            echo '<a href="../admin/applications.php" id="active-page">Applications</a>';
-        else
-            echo '<a href="../admin/applications.php">Applications</a>';
-
-        if ($file=="current_company" || $file=="new_company" || $file=="view_company" || $file=="archive_company") 
-            echo '<a href="../admin/current_company.php" id="active-page">Company</a>';
-        else
-            echo '<a href="../admin/current_company.php">Company</a>';
-
-        if ($file=="joblist" || $file=="new_job" ||$file=="view_job")
-            echo '<a href="../admin/joblist.php" id="active-page">Jobs</a>';
-        else
-            echo '<a href="../admin/joblist.php">Jobs</a>';
-
-        if ($file=="claims" || $file=="new_claims" || $file=="view_claims")
-            echo '<a href="../admin/claims.php" id="active-page">Claims</a>';
-        else
-            echo '<a href="../admin/claims.php">Claims</a>';
-
-        if ($file=="current_expenses" || $file=="new_expenses" || $file=="view_expenses" || $file=="archive_expenses")
-            echo '<a href="../admin/current_expenses.php" id="active-page">Expenses</a>';
-        else
-            echo '<a href="../admin/current_expenses.php">Expenses</a>';
-
-        if ($file=="leaveapplications" || $file=="new_leave")
-            echo '<a href="../admin/leaveapplications.php" id="active-page">Leave Applications</a>';
-        else
-            echo '<a href="../admin/leaveapplications.php">Leave Applications</a>';
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="all_members.php">All Members</a>
+            <a class="collapse-item" href="project_managers.php">Project Manager</a>
+            <a class="collapse-item" href="project_members.php">Project Member</a>
+          </div>
+        </div>
+      </li>
         
-        // if ($file=="pa")
-        //     echo '<a href="#" id="active-page">Personal Appraisal</a>';
-        // else
-        //     echo '<a href="#">Personal Appraisal</a>';
-        
-        if ($file=="users" || $file=="register_users")
-            echo '<a href="../admin/users.php" id="active-page">Register User</a>';
-        else
-            echo '<a href="../admin/users.php">Register Users</a>';
+        <li class="nav-item">
+        <a class="nav-link" href="upload_files.php">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Upload Files</span></a>
+      </li>
 
-        if ($file=="current_file_storage" || $file=="new_storage" || $file=="archive_file_storage")
-            echo '<a href="../admin/current_file_storage.php" id="active-page">File Storage</a>';
-        else
-            echo '<a href="../admin/current_file_storage.php">File Storage</a>';
+		  <li class="nav-item">
+            <a href="calendar.php" class="nav-link">
+              <i class="far fa-calendar-alt"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a href="progress.php" class="nav-link">
+              <i class="fas fa-tasks"></i>
+              <span>Progress</span>
+            </a>
+          </li>
 
-        if ($file=="organizationchart")
-            echo '<a href="../admin/organizationchart.php" id="active-page">Organization Chart</a>';
-        else
-            echo '<a href="../admin/organizationchart.php">Organization Chart</a>';     
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
 
-        if ($file=="activity_log")
-            echo '<a href="../admin/activity_log.php" id="active-page">Activity Log</a>';
-        else
-            echo '<a href="../admin/activity_log.php">Activity Log</a>';
-        
-    ?>
-    </div>
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
 
-    <div class="sidenav-btm">
-        <hr class="sidenav-separator">    
-        <?php
-            if ($file=="resume_settings" || $file=="claim_settings")
-                echo '<a href="../admin/resume_settings.php" id="active-page">Settings</a>';
-            else
-                echo '<a href="../admin/resume_settings.php">Settings</a>';
-        ?>
-    </div>
+    </ul>
+    <!-- End of Sidebar -->
 
-</nav>
