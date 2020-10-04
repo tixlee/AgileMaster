@@ -48,37 +48,29 @@ if(isset($_POST['upload']))
 
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   
-    <?php include('../head/head.php'); ?>
-    <title>Dashboard</title>
+  <title>AgileMaster | All Members</title>
+	<?php include('../navigation/head.php');?>
+  
 </head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
 
+  <?php include('../navigation/topbar.php');?>
 
-<body id="page-top">
+  <?php include('../navigation/sidebar.php');?>
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-<?php include('../navigation/side_nav.php');?>
-      <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        
-<?php include('../navigation/top_nav.php');?>
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-            
-            <br><br>
-		<!-- DataTales Example -->
-          <div class="card shadow mb-4">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	</br></br>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+	  
+	   <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Members</h6>
                 
@@ -131,26 +123,41 @@ if(isset($_POST['upload']))
                         <?php  
                                 }
 			            ?>
-                              
+                               
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-            
-           
-            
-        </div>
-        </div>
-        </div>
-    </div>
-    
-        <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-    
-    <!-- Bootstrap core JavaScript-->
+	  
+	  
+        
+        
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<!-- <script src="dist/js/adminlte.js"></script> -->
+
+   <!-- Bootstrap core JavaScript-->
   <script src="../dependencies/vendor/jquery/jquery.min.js"></script>
   <script src="../dependencies/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -168,6 +175,14 @@ if(isset($_POST['upload']))
   <script src="../dependencies/scripts/datatables-demo.js"></script>
     
 <script src="../dependencies/scripts/scripts.js"></script>
-    
+
+<!-- jQuery -->
+<script src="../dependencies/navigation/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="../dependencies/navigation/js/adminlte.js"></script>
+
 </body>
 </html>

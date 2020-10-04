@@ -9,42 +9,29 @@ include_once '../helpers/module.php';
 
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   
-    <?php include('../head/head.php'); ?>
-    <title>Dashboard</title>
+  <title>AgileMaster | Dashboard</title>
+	<?php include('../navigation/head.php');?>
+  
 </head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
 
+  <?php include('../navigation/topbar.php');?>
 
-<body id="page-top">
+  <?php include('../navigation/sidebar.php');?>
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-<?php include('../navigation/side_nav.php');?>
-      <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        
-<?php include('../navigation/top_nav.php');?>
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	</br></br>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+	  
+	   <div class="row">
 
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
@@ -122,17 +109,16 @@ include_once '../helpers/module.php';
               </div>
             </div>
           </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
+		  
+		  
+		  <div class="row">
 
             <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Graph</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -160,7 +146,7 @@ include_once '../helpers/module.php';
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Item</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -194,9 +180,9 @@ include_once '../helpers/module.php';
               </div>
             </div>
           </div>
-
-          <!-- Content Row -->
-          <div class="row">
+		  
+		  
+		  <div class="row">
 
             <!-- Content Column -->
             <div class="col-lg-6 mb-4">
@@ -329,36 +315,60 @@ include_once '../helpers/module.php';
 
             </div>
           </div>
+	  
+	  
+        
+        
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-        </div>
-        <!-- /.container-fluid -->
 
-      </div>
-      <!-- End of Main Content -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </div>
+<!-- AdminLTE App -->
+<!-- <script src="dist/js/adminlte.js"></script> -->
 
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <!-- Vendor JS Files -->
-    <!-- jQuery -->
+   <!-- Bootstrap core JavaScript-->
   <script src="../dependencies/vendor/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
   <script src="../dependencies/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!--  <script src="../dependencies/scripts/adminlte.js"></script>-->
+  <!-- Core plugin JavaScript-->
+  <script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
+
   <!-- Custom scripts for all pages-->
   <script src="../dependencies/scripts/sb-admin-2.min.js"></script>
+    
+  <!-- Page level plugins -->
+  <script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../dependencies/scripts/datatables-demo.js"></script>
+    
+<script src="../dependencies/scripts/scripts.js"></script>
+
+<!-- jQuery -->
+<script src="../dependencies/navigation/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="../dependencies/navigation/js/adminlte.js"></script>
 
 </body>
-
 </html>
