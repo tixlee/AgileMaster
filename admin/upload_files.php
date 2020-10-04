@@ -108,7 +108,7 @@ if(isset($_POST['upload']))
                                 </div>
                                 <br>
                                 <div class="row col-md-10 col-xm-6">
-                                    <input type="file" name="file[]" class="custom-fs-input" id="custom-fs-input" accept=".pdf" required>
+                                    <input type="file" name="file[]" class="custom-fs-input" id="custom-fs-input" required>
                                 </div>
                                 <br>
                                 <div class="modal-footer">

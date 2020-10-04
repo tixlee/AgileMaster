@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `users`
 --
-
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -47,6 +47,12 @@ INSERT INTO `users` (`user_id`, `name`, `email`, `password`, `role`) VALUES
 (5, 'tarek', 'tarek@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'project member');
 
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactusform`
+--
+DROP TABLE IF EXISTS `contactusform`;
 CREATE TABLE `contactusform` (
   `contact_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -56,13 +62,57 @@ CREATE TABLE `contactusform` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `file_storage`
+--
+DROP TABLE IF EXISTS `file_storage`;
 CREATE TABLE `file_storage` (
   `storage_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `file` varchar(255) NOT NULL,
   `date_uploaded` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project`
+--
+DROP TABLE IF EXISTS `project`;
+CREATE TABLE `project` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `project_name` varchar(50) NOT NULL,
+  `project_description` text NOT NULL,
+  `project_status` int(10) NOT NULL,
+  PRIMARY KEY (`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `task`
+--
+DROP TABLE IF EXISTS `task`;
+CREATE TABLE `task` (
+  `task_id` int(10) NOT NULL AUTO_INCREMENT,
+  `task_name` varchar(50) NOT NULL,
+  `task_issuedate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `dead_line` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `task_details` text NOT NULL,
+  `task_project` int(10) NOT NULL,
+  `task_receiver` int(10) NOT NULL,
+  `task_sender` int(10) NOT NULL,
+  `task_sender_name` varchar(50) NOT NULL,
+  `task_sender_image` text NOT NULL,
+  `task_display` int(10) NOT NULL DEFAULT '1',
+  `task_status` varchar(50) NOT NULL DEFAULT 'pending',
+  PRIMARY KEY (`task_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 
 -- --------------------------------------------------------
@@ -92,6 +142,12 @@ ALTER TABLE `contactusform`
 ALTER TABLE `file_storage`
   ADD PRIMARY KEY (`storage_id`);
 
+--
+-- Indexes for table `project`
+--
+ALTER TABLE `project`
+  ADD PRIMARY KEY (`project_id`);
+
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -114,6 +170,12 @@ ALTER TABLE `contactusform`
 --
 ALTER TABLE `file_storage`
   MODIFY `storage_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `project`
+--
+ALTER TABLE `project`
+  MODIFY `project_id` int(11) NOT NULL AUTO_INCREMENT;
 
 
 COMMIT;
