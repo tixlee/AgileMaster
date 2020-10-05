@@ -339,9 +339,9 @@ include_once '../helpers/module.php';
 <script src="../dependencies/navigation/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 <script src="../dependencies/navigation/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<!-- <script src="../dependencies/navigation/js/adminlte.js"></script>
+
 
    <!-- Bootstrap core JavaScript-->
 
