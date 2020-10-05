@@ -642,59 +642,59 @@ include_once 'helpers/module.php';
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Find a pricing plan that is right for you. Try first and upgrade later. We hope to hear that our pricing is amazing.</p>
+          <h2>-</h2>
+          <p>-</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
             <div class="box" data-aos="fade-up" data-aos-delay="100">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>-</h3>
+              <h4><sup>-</sup>-<span>-</span></h4>
               <ul>
-                <li>5 team members</li>
-                <li>Time tracking</li>
-                <li>Add comment</li>
-                <li class="na">Bug testing, bug reporting, bug fixing</li>
-                <li class="na">Generate Report</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li class="na">-</li>
+                <li class="na">-</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">-</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
+              <h3>-</h3>
+              <h4><sup>-</sup>-<span>-</span></h4>
               <ul>
-                <li>20 team members</li>
-                <li>Time tracking</li>
-                <li>Add comment</li>
-                <li>Bug testing, bug reporting, bug fixing</li>
-                <li class="na">Generate Report</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li class="na">-</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">-</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="300">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h3>-</h3>
+              <h4><sup>-</sup>-<span>-</span></h4>
               <ul>
-                <li>unlimited team members</li>
-                <li>Time tracking</li>
-                <li>Add comment</li>
-                <li>Bug testing, bug reporting, bug fixing</li>
-                <li>Generate Report</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">-</a>
               </div>
             </div>
           </div>

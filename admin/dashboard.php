@@ -336,16 +336,14 @@ include_once '../helpers/module.php';
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="../dependencies/navigation/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../dependencies/navigation/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<!-- <script src="dist/js/adminlte.js"></script> -->
+<!-- <script src="../dependencies/navigation/js/adminlte.js"></script>
 
    <!-- Bootstrap core JavaScript-->
-  <script src="../dependencies/vendor/jquery/jquery.min.js"></script>
-  <script src="../dependencies/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
   <script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -363,9 +361,8 @@ include_once '../helpers/module.php';
 <script src="../dependencies/scripts/scripts.js"></script>
 
 <!-- jQuery -->
-<script src="../dependencies/navigation/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- AdminLTE App -->
 <script src="../dependencies/navigation/js/adminlte.js"></script>

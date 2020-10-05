@@ -12,7 +12,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../resources/images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin</a>
@@ -137,6 +137,112 @@
               </li>
             </ul>
           </li>
+		  
+		  <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-bug"></i>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Bugs
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                 &nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+                  <p>&nbsp;&nbsp;&nbsp;Bug Testing</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/data.html" class="nav-link">
+                  &nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+                  <p>&nbsp;&nbsp;&nbsp;Bug Reporting</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/jsgrid.html" class="nav-link">
+                  &nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+                  <p>&nbsp;&nbsp;&nbsp;Bug Fixing</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+		  
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              &nbsp;<i class="fas fa-ellipsis-v"></i>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Features
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="far fa-file-alt"></i>
+                  <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document Generator
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;SRS Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;SDD Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;STD Report</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+			  
+			  <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="far fa-file-alt"></i>
+                  <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;-</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;-</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
+                      <p>&nbsp;&nbsp;&nbsp;-</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+			  
+            </ul>
+          </li>
+
+		  </br></br></br>
+		  
 		  
         </ul>
       </nav>
