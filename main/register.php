@@ -46,7 +46,7 @@ if(isset($_POST['create'])){
 <html>
 <head>
     <?php include_once('../head/head.php');?>
-	<title>Login</title>
+	<title>Register</title>
     <!-- Favicons -->
     <link href="../resources/images/logo_small.png" rel="icon">
         <!-- Template Main CSS File -->

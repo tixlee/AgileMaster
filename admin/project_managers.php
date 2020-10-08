@@ -105,12 +105,15 @@ if(isset($_POST['upload']))
                             <td><?php echo $row['email']; ?></td>
                             <td><?php echo $row['role']; ?></td>
                             
-                            <td >
-                                    <a href='delete.php?storageid=<?php echo $row['storage_id'];?>'class="trash-button" onclick="return confirm('<?php echo $confirmation; ?>')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                            <?php
+                                            $confirmation = "Are you sure about deleting the user?";
+                                        ?>
+                                        <td >
+                                                <a href='delete.php?user_id=<?php echo $row['user_id'];?>'class="trash-button" onclick="return confirm('<?php echo $confirmation; ?>')">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
 
                                         </a>
-                            </td>
+                                                </td>
                       
                     </tr>
                               <?php

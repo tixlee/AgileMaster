@@ -12,5 +12,10 @@ if(isset($_GET['storageid'])){
     header('location: upload_files.php');
 }
 
+if(isset($_GET['user_id'])){
+    $user_id = $_GET['user_id'];
+    delete_all_members($user_id);
+    header('location: all_members.php');
+}
 
 ?>

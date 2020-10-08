@@ -1,9 +1,17 @@
 <?php
 //USERS
-function get_user($user_id)
+function get_user($userId)
 {
 	global $conn;
-	$result = mysqli_query($conn, "SELECT * FROM `users` WHERE `user_id` = '".$user_id."'");
+	$result = mysqli_query($conn, "SELECT * FROM `users` WHERE `user_id` = '".$userId."'");
+
+	return $result;
+}
+
+function getAllUser()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `users`");
 
 	return $result;
 }
@@ -39,6 +47,14 @@ function getAllProjectMemberAccounts()
 
 	return $result;
 }
+
+
+function delete_all_members($user_id)
+{
+	global $conn;
+	$result = mysqli_query($conn, "DELETE FROM `users` WHERE `user_id` = '".$user_id."'");
+}
+
 
 
 //Contact Us Form
@@ -95,4 +111,73 @@ function delete_storage($storageid)
 	$result = mysqli_query($conn, "DELETE FROM `file_storage` WHERE `storage_id` = '".$storageid."'");
 }
 
+
+
+// Project
+function insert_project($project_name, $project_description)
+{
+	global $conn;
+	$result = mysqli_query($conn, "INSERT INTO `project` (`project_name`, `project_description`) VALUES ('$project_name', '$project_description')");
+
+	return $result;
+}
+
+
+// user_project
+function insert_user_project($user_id)
+{
+	global $conn;
+	$result = mysqli_query($conn, "INSERT INTO `user_project` (`user_id`, `project_id`) VALUES ('$user_id', LAST_INSERT_ID())");
+
+	return $result;
+}
+
+
+//function getAllProjects()
+//{
+//	global $conn;
+//	$result = mysqli_query($conn, "SELECT project.project_name, project.project_description FROM `project` INNER JOIN `user_project` ON project.project_id=user_project.project_id");
+//
+//	return $result;
+//}
+
+
+
+function getAllProjectsAdmin()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT project_name, project_description FROM `project`");
+
+	return $result;
+}
+
+
+function getAllProjects($project_id)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT project_name, project_description FROM `project`  WHERE `project_id` = '".$project_id."'");
+
+	return $result;
+}
+
+function getProjectByUser($userId)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `user_project` WHERE `user_id` = '".$userId."'");
+
+	return $result;
+}
+
+
+
+
 ?>
+
+
+
+
+
+
+
+
+

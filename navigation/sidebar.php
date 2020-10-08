@@ -81,6 +81,15 @@
             </ul>
           </li>
 		  
+		  <li class="nav-item">
+            <a href="contactus_feedback.php" class="nav-link">
+              <i class="fas fa-comment"></i>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Contact Us Feedback
+              </p>
+            </a>
+          </li>
+		  
           <li class="nav-item">
             <a href="upload_files.php" class="nav-link">
               <i class="fas fa-file-upload"></i>
@@ -188,19 +197,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="../doc_generator/srs_generator.php" class="nav-link">
                       &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
                       <p>&nbsp;&nbsp;&nbsp;SRS Report</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="../doc_generator/sdd_generator.php" class="nav-link">
                       &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
                       <p>&nbsp;&nbsp;&nbsp;SDD Report</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="../doc_generator/std_generator.php" class="nav-link">
                       &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
                       <p>&nbsp;&nbsp;&nbsp;STD Report</p>
                     </a>
