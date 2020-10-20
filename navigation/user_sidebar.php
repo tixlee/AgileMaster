@@ -178,7 +178,7 @@
             <a href="#" class="nav-link">
               &nbsp;<i class="fas fa-ellipsis-v"></i>
               <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Features
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Tools
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -215,29 +215,23 @@
 			  
 			  <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
-                  <i class="far fa-file-alt"></i>
+                  <i class="fas fa-pencil-ruler"></i>
                   <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diagram Creator
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="../diagrams/flowchart.php" class="nav-link">
                       &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
-                      <p>&nbsp;&nbsp;&nbsp;-</p>
+                      <p>&nbsp;&nbsp;&nbsp;Flowchart Diagram</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="../diagrams/pageflow.php" class="nav-link">
                       &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
-                      <p>&nbsp;&nbsp;&nbsp;-</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      &nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
-                      <p>&nbsp;&nbsp;&nbsp;-</p>
+                      <p>&nbsp;&nbsp;&nbsp;PageFlow Diagram</p>
                     </a>
                   </li>
                 </ul>
