@@ -837,9 +837,9 @@ include_once 'helpers/module.php';
 			</div>
 		</div>
 		<div class="social-links text-center text-md-right pt-3 pt-md-0">
-			<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-			<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-			<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+			<a href="https://twitter.com/master_agile?s=11" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+			<a href="https://www.facebook.com/Agile-Master-109846160932251" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+			<a href="https://www.instagram.com/agile__masterr__/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
 		</div>
     </div>
 	</footer>

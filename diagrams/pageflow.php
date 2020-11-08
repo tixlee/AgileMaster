@@ -21,7 +21,7 @@ include_once '../helpers/module.php';
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>PageFlow Creator</title>
+    <title>AgileMaster | PageFlow Creator</title>
 	<?php include('../navigation/head.php');?>
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -307,7 +307,7 @@ include_once '../helpers/module.php';
 		alert("Image Saved!");
         window.scrollTo(0, 0);
 
-        html2canvas(document.getElementById("sample")).then(function (canvas) {
+        html2canvas(document.getElementById("myDiagramDiv")).then(function (canvas) {
           var ajax = new XMLHttpRequest();
           ajax.open("POST", "save-capture.php", true);
           ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

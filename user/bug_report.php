@@ -123,14 +123,14 @@ if(isset($_POST['create'])){
                                                     <textarea class="form-control"  name="bug_desc" id="bug_desc" rows="3" placeholder="Add a more detailed description..."  required=""></textarea>
                                                 </div>
                                                 <br>
+												 <div class="row col-md-12 col-xm-6">
+                                                    <label for="due_date" >Start Date</label>
+                                                    <input class="form-control" type="date" placeholder="Start Date" id="start_date" name="start_date" required=""/>
+                                                </div>
+												<br>
                                                 <div class="row col-md-12 col-xm-6">
                                                     <label for="due_date" >Due Date</label>
                                                     <input class="form-control" type="date" placeholder="Due Date" id="due_date" name="due_date" required=""/>
-                                                </div>
-                                                <br>
-                                                <div class="row col-md-12 col-xm-6">
-                                                    <label for="due_date" >Start Date</label>
-                                                    <input class="form-control" type="date" placeholder="Start Date" id="start_date" name="start_date" required=""/>
                                                 </div>
                                                 <br>
                                                 <div class="row col-md-12 col-xm-6 mb-3 ">
