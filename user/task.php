@@ -34,7 +34,7 @@ if(isset($_POST['create'])){
         $project_task_num = $result->num_rows+1;
     insert_task($task_name, $task_desc, $project_task_num, $board_id, $due_date, $start_date, 1, $created_by);
     insert_task_assignees($user_id);
-	insert_calendar($task_name, $start_date, $due_date);
+	insert_calendar($task_name, $due_date, $due_date);
     echo "<script>window.location.href ='../user/task.php?board_id=$board_id'</script>";
    
     }
@@ -51,7 +51,7 @@ $board_id = $_GET['board_id'];
 <html>
 <head>
   
-  <title>AgileMaster | Board</title>
+  <title>AgileMaster | Task</title>
 	<?php include('../navigation/head.php');?>
   
 </head>
@@ -93,8 +93,8 @@ $board_id = $_GET['board_id'];
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
-                                <h1 class="card-title font-weight-bold">Project Name: </h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['project_name']; ?> </h1><p>.   </p>
-                                <h1 class="card-title font-weight-bold">Board Name: </h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['board_name']; ?> </h1>
+                                <h1 class="card-title font-weight-bold">Project Name:&nbsp;</h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['project_name']; ?> </h1><p>&nbsp;   </p>
+                                <h1 class="card-title font-weight-bold">Board Name:&nbsp;</h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['board_name']; ?> </h1>
                                 <button onclick="location.href='project_details.php?project_id=<?php echo $bRow['project_id']; ?>'" class="btn btn-info " style="float: right;">BACK TO PROJECT DETAILS</button>
                             </div>  
                           <!-- /.card-body -->
@@ -105,7 +105,7 @@ $board_id = $_GET['board_id'];
                                
                                 
                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
-                                  + Add Task
+                                  <i class="fas fa-plus"></i> ADD TASK
                                 </button>
                                 <br><br>
                                 <!-- Modal -->
@@ -135,16 +135,17 @@ $board_id = $_GET['board_id'];
                                                     <textarea class="form-control"  name="task_desc" id="task_desc" rows="3" placeholder="Add a more detailed description..."  required=""></textarea>
                                                 </div>
                                                 <br>
+												<div class="row col-md-12 col-xm-6">
+                                                    <label for="due_date" >Start Date</label>
+                                                    <input class="form-control" type="date" placeholder="Start Date" id="start_date" name="start_date" required=""/>
+                                                </div>
+												<br>
                                                 <div class="row col-md-12 col-xm-6">
                                                     <label for="due_date" >Due Date</label>
                                                     <input class="form-control" type="date" placeholder="Due Date" id="due_date" name="due_date" required=""/>
                                                 </div>
                                                 <br>
-                                                <div class="row col-md-12 col-xm-6">
-                                                    <label for="due_date" >Start Date</label>
-                                                    <input class="form-control" type="date" placeholder="Start Date" id="start_date" name="start_date" required=""/>
-                                                </div>
-                                                <br>
+                                                
                                                 <div class="row col-md-12 col-xm-6 mb-3 ">
                                                     
                                                     <label for="exampleDropdown" >Assign To</label>

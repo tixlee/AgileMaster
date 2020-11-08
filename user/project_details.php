@@ -19,7 +19,7 @@ if(isset($_POST['save'])){
     $board_name = mysqli_real_escape_string($conn, $board_name);
     insert_board($project_id, $board_name);
     
-    echo "<script>alert('Board SUCCESSFULLY ADDED');</script>";
+    echo "<script>alert('BOARD SUCCESSFULLY ADDED');</script>";
     echo "<script>window.location.href ='../user/project_details.php?project_id=$project_id'</script>";
    
  
@@ -60,7 +60,7 @@ if(isset($_POST['switch'])){
 <html>
 <head>
   
-  <title>AgileMaster | Board</title>
+  <title>AgileMaster | Project Details</title>
 	<?php include('../navigation/head.php');?>
   
 </head>
@@ -123,7 +123,7 @@ if(isset($_POST['switch'])){
                                                 {
                                             ?>
                                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
-                                              Add Board
+                                              <i class="fas fa-plus"></i> ADD BOARD
                                             </button>
                                             <?php
                                                 }
@@ -255,7 +255,7 @@ if(isset($_POST['switch'])){
                                                 {
                                             ?>
                                                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-                                                        Add Member 
+                                                      <i class="fas fa-plus"></i>  ADD MEMBER
                                                   </button>
                                             <?php
                                                 }

@@ -116,36 +116,16 @@
 						</li>
 					</ul>
 				</li>
-
-				<li class="nav-item has-treeview">
-					<a href="#" class="nav-link">
+				
+				<li class="nav-item">
+					<a href="../user/bug_report.php" class="nav-link">
 						<i class="fas fa-bug"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Bugs
-							<i class="fas fa-angle-left right"></i>
 						</p>
 					</a>
-					<ul class="nav nav-treeview">
-						<li class="nav-item">
-							<a href="../user/bugtest.php" class="nav-link">
-								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
-								<p>&nbsp;&nbsp;&nbsp;Bug Testing</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="../user/bugtest.php" class="nav-link">
-								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
-								<p>&nbsp;&nbsp;&nbsp;Bug Reporting</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="../user/bugtest.php" class="nav-link">
-								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
-								<p>&nbsp;&nbsp;&nbsp;Bug Fixing</p>
-							</a>
-						</li>
-					</ul>
 				</li>
+
 				
 				<li class="nav-item">
 					<a href="../timetracker/timetracker.php" class="nav-link">

@@ -1,4 +1,21 @@
+
 <?php
+
+function getAllDueDate()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `events` ");
+
+	return $result;
+}
+
+function getAllUpload($userId)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `file_storage` WHERE `user_id` = '$userId'");
+
+	return $result;
+}
 
 //USERS
 function get_admin()
@@ -94,7 +111,7 @@ function insert_contactus($name, $email, $subject, $comment)
 	return $result;
 }
 
-function getAllFeedbackForm()
+function getAllContactUsFeedbackForm()
 {
 	global $conn;
 	$result = mysqli_query($conn, "SELECT * FROM `contactusform` ");
@@ -207,6 +224,13 @@ function insert_member_project($user_id, $project_id)
 	global $conn;
 	$result = mysqli_query($conn, "INSERT INTO `user_project` (`user_id`, `project_id`) VALUES ('$user_id', '$project_id')");
 
+	return $result;
+}
+
+function getMembersProjectInAdmin($project_id)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `user_project` NATURAL JOIN `users` WHERE `project_id` = '".$project_id."'");
 	return $result;
 }
 
@@ -343,6 +367,22 @@ function getBoardByProject($project_id)
 {
 	global $conn;
 	$result = mysqli_query($conn, "SELECT * FROM `board` NATURAL JOIN `project` WHERE `project_id` = '$project_id'");
+
+	return $result;
+}
+
+function getBoardByProjectAdmin($userId)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `board` NATURAL JOIN `project` NATURAL JOIN `users` WHERE `user_id` = '$userId'");
+
+	return $result;
+}
+
+function getAllBoardsAdmin()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `board`");
 
 	return $result;
 }
@@ -546,7 +586,21 @@ function getAssigneesName($userId)
 }
 
 
+function getAllDetailsAdmin()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `task` NATURAL JOIN `board` NATURAL JOIN `project`");
 
+	return $result;
+}
+
+function getDueDate($userId)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT due_date FROM `task` NATURAL JOIN `task_assignees` NATURAL JOIN `board` NATURAL JOIN `project`  WHERE `user_id` = '$userId'");
+
+	return $result;
+}
 
 
 //CVomment Section in Task Details Page
@@ -614,6 +668,14 @@ function getAssignedBugByUserId($userId)
 	return $result;
 }
 
+function getAssignedBugAdmin()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `bug_report`");
+
+	return $result;
+}
+
 function getAssigneeBugByUserId($assignee)
 {
 	global $conn;
@@ -649,7 +711,13 @@ function insert_feedback($name, $email, $role, $major, $understanding, $experien
 	return $result;
 }
 
+function getAllFeedbackForm()
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `feedback_survey`");
 
+	return $result;
+}
 
 function getHappyUsers()
 {
@@ -666,12 +734,6 @@ function getHappyUsers()
 
 
 ?>
-
-
-
-
-
-
 
 
 

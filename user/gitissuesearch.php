@@ -32,7 +32,7 @@ include_once '../resources/links/require.php';
 					<h2>Github Issue Search</h2>
 					<input type="text" id="name"  placeholder="Username" required="required" style="padding-top: 0.3%; padding-bottom: 0.3%;"> /
 					<input type="text" id="repo"  placeholder="Repository" required="required" style="padding-top: 0.3%; padding-bottom: 0.3%;">
-					<button id = 'btnIssues' class="btn btn-info">Search</button>
+					<button id = 'btnIssues' class="btn btn-success">Search</button>
 					<br><br><br>
 
 					<div class="card shadow mb-4">

@@ -2564,3 +2564,40 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.bg-gray-600 {
+  background-color: #858796 !important;
+}
+
+.bg-gray-700 {
+  background-color: #6e707e !important;
+}
+
+.bg-pink-800 {
+  background-color: #a6389d !important;
+    
+}
+.bg-purple-800 {
+  background-color: #ebeab0 !important;
+    
+}
+.smile {
+  color: red !important;
+  opacity: 0.9;
+}
+
+.user, .diagram, .trello, .upload, .bug, .comment, .calendar {
+  color: white !important;
+  opacity: 0.9;
+}
+
+.bg-orange-800 {
+  background-color: #e65e15 !important;
+}
+.bg-gray-800 {
+  background-color: #5a5c69 !important;
+}
+
+.bg-gray-900 {
+  background-color: #3a3b45 !important;
+}

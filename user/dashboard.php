@@ -33,8 +33,8 @@ if(isset($_SESSION['user_id']))
 							<div class="small-box bg-primary">
 								<div class="inner">
 									<h3><?php 
-											$accounts = getProjectByUser($userId);
-											echo mysqli_num_rows($accounts); 
+											$projects = getProjectByUser($userId);
+											echo mysqli_num_rows($projects); 
 											?></h3>
 									<p>Total Projects</p>
 								</div>
@@ -49,8 +49,9 @@ if(isset($_SESSION['user_id']))
 							<div class="small-box bg-success">
 								<div class="inner">
 									<h3><?php 
-											$accounts = getProjectByUser($userId);
-											echo mysqli_num_rows($accounts); 
+											$getBoardByProjectAdmin = getBoardByProjectAdmin($userId);
+											$total_boards = mysqli_num_rows($getBoardByProjectAdmin); 
+											echo $total_boards;
 											?></h3>
 									<p>Total Boards</p>
 								</div>
@@ -61,12 +62,32 @@ if(isset($_SESSION['user_id']))
 							</div>
 						</div>
 
-						<div class="col-lg-3 col-6" >
+						
+						
+						<div class="col-lg-3 col-6">
 							<div class="small-box bg-danger">
-								<div class="inner" style="color: white;">
+								<div class="inner">
 									<h3><?php 
-										$accounts = getProjectByUser($userId);
-										echo mysqli_num_rows($accounts); 
+										
+                                        $bug = getAssignedBugByUserId($userId);
+										echo mysqli_num_rows($bug); 
+										
+										?></h3>
+									<p>Bug To Be Fixed</p>
+								</div>
+								<div class="icon">
+									<i class="fas fa-bug"></i>
+								</div>
+								<a href="bug_report.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-6" >
+							<div class="small-box bg-warning">
+								<div class="inner">
+									<h3><?php 
+										$getDueDate = getDueDate($userId);
+										echo mysqli_num_rows($getDueDate); 
 										?></h3>
 									<p>Total Due Dates</p>
 								</div>
@@ -77,21 +98,10 @@ if(isset($_SESSION['user_id']))
 							</div>
 						</div>
 						
-						<div class="col-lg-3 col-6">
-							<div class="small-box bg-warning">
-								<div class="inner">
-									<h3><?php 
-										$accounts = getProjectByUser($userId);
-										echo mysqli_num_rows($accounts); 
-										?></h3>
-									<p>Bug To Be Fixed</p>
-								</div>
-								<div class="icon">
-									<i class="fas fa-bug"></i>
-								</div>
-								<a href="bug_report.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
+						
+						
+						
+						
 
             <!-- Earnings (Monthly) Card Example 
             <div class="col-xl-3 col-md-6 mb-4">
@@ -176,7 +186,21 @@ if(isset($_SESSION['user_id']))
 			
 					</div>
                     
-                    
+                    							<!-- DONUT CHART -->
+							<div class="card card-primary">
+								<div class="card-header">
+									<h3 class="card-title">Overall Data</h3>
+
+									<div class="card-tools">
+										<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+										</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<canvas class="donutChart" style="min-height: 300px; height: 300px; max-height: 300px; max-width: 100%;"></canvas>
+								</div>
+							</div>
+
                     
                     
                     
@@ -415,5 +439,49 @@ if(isset($_SESSION['user_id']))
 
 <!-- AdminLTE App -->
 <script src="../dependencies/navigation/js/adminlte.js"></script>
+
+<script src="../dependencies/chart.js/Chart.min.js"></script>
+<script>
+  $(function () {
+
+    //-------------
+    //- DONUT CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var donutChartCanvas = $('.donutChart').get(0).getContext('2d')
+    var donutData        = {
+      labels: [
+          'Projects', 
+          'Boards',
+          'Bugs', 
+          'Due Dates', 
+
+      ],
+      datasets: [
+        {
+          data: [<?php echo mysqli_num_rows($projects); ?>,
+				 <?php echo mysqli_num_rows($getBoardByProjectAdmin); ?>,
+				 <?php echo mysqli_num_rows($bug); ?>,
+				 <?php echo mysqli_num_rows($getDueDate); ?>,
+],
+				 
+          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc'],
+        }
+      ]
+    }
+    var donutOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    var donutChart = new Chart(donutChartCanvas, {
+      type: 'doughnut',
+      data: donutData,
+      options: donutOptions      
+    })
+    
+  })
+</script>
 </body>
 </html>

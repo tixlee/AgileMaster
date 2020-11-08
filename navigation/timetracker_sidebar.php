@@ -52,7 +52,7 @@
 				</li>
 		  
 				<li class="nav-item">
-					<a href="members.php" class="nav-link">
+					<a href="../user/members.php" class="nav-link">
 						<i class="fas fa-users"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;Members
@@ -79,7 +79,7 @@
 				</li>
 				
 				<li class="nav-item">
-					<a href="progress.php" class="nav-link">
+					<a href="../user/progress.php" class="nav-link">
 						<i class="fas fa-tasks"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Progress
@@ -97,19 +97,19 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="gitreposearch.php" class="nav-link">
+							<a href="../user/gitreposearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Repository Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="gitcommitsearch.php" class="nav-link">
+							<a href="../user/gitcommitsearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Commit Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="gitissuesearch.php" class="nav-link">
+							<a href="../user/gitissuesearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Issue Search</p>
 							</a>
@@ -232,7 +232,7 @@
 					</ul>
 				</li> -->
 				<li class="nav-item">
-					<a href="feedback.php" class="nav-link">
+					<a href="../user/feedback.php" class="nav-link">
 						<i class="fas fa-comment-alt"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Feedback Survey

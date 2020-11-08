@@ -123,7 +123,7 @@ $board_id = $_GET['board_id'];
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
-                                <h1 class="card-title font-weight-bold" >Board Name: </h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['board_name']; ?> </h1>
+                                <h1 class="card-title font-weight-bold" >Board Name:&nbsp;</h1><h1 class="card-title font-weight-bold" style=" color: #d6002f;"><?php echo $bRow['board_name']; ?> </h1>
                                 <button onclick="location.href='task.php?board_id=<?php echo $board_id ?>'" class="btn btn-info " style="float: right;">BACK TO REQUIREMENTS</button>
                             </div>  
                           <!-- /.card-body -->

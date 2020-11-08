@@ -64,7 +64,7 @@ if(isset($_POST['create'])){
 <html>
 <head>
   
-  <title>AgileMaster | Projects</title>
+  <title>AgileMaster | Bugs</title>
 	<?php include('../navigation/head.php');?>
   
 </head>
@@ -137,9 +137,9 @@ if(isset($_POST['create'])){
                                                     
                                                     <label for="exampleDropdown" >Priority</label>
                                                     <select data-live-search="true" title="Priority" name="priority" class="form-control selectpicker col-sm-12">
-                                                        <option value="low">Low</option>
-                                                        <option value="medium">Medium</option>
-                                                        <option value="high">High</option>
+                                                        <option value="Low">Low</option>
+                                                        <option value="Medium">Medium</option>
+                                                        <option value="High">High</option>
                                                     </select>
                                                      
                                                 </div>
@@ -170,7 +170,7 @@ if(isset($_POST['create'])){
                                                     <select data-live-search="true" title="Status" name="state" class="form-control selectpicker col-sm-12">
                                                         <option value="Open">Open</option>
                                                         <option value="In Progress">In Progress</option>
-                                                        <option value="closed">Closed</option>
+                                                        <option value="Closed">Closed</option>
                                                     </select>
                                                      
                                                 </div>
@@ -193,10 +193,10 @@ if(isset($_POST['create'])){
                    <div class="card-body">
                        <ul class="nav nav-tabs nav-justified" id="myTabMD" role="tablist">
                                     <li class="nav-item waves-effect waves-light">
-                                      <a class="nav-link active font-weight-bold" id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md" aria-selected="true">Created Bug Report By You</a>
+                                      <a class="nav-link active font-weight-bold" id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md" aria-selected="true">Bug Reported By You</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                      <a class="nav-link   font-weight-bold" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">Assigned Bug Report To You</a>
+                                      <a class="nav-link   font-weight-bold" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">Bug Assigned To You</a>
                                     </li>
                                   </ul>
                        
@@ -288,7 +288,7 @@ if(isset($_POST['create'])){
                                     <tr>
                                         <th >Bug Name</th>
                                         <th >Bug Description</th>
-                                        <th >Creayed By</th>
+                                        <th >Created By</th>
                                         <th >Priority</th>
                                         <th >Creation Date</th>
                                         <th >Due Date</th>
