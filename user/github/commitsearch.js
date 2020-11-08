@@ -47,10 +47,10 @@ async function getCommits() {
         divResult.appendChild(img)
         divResult.appendChild(anchor)
         divResult.appendChild(document.createElement("br"))
+		statusHTML += '<td><img src=' + i.author.avatar_url + ' width="32px" height="32px"></img></td>';
         */
 
        statusHTML += '<tr>';
-       statusHTML += '<td><img src=' + i.author.avatar_url + ' width="32px" height="32px"></img></td>';
        statusHTML += '<td>' + i.commit.author.name + '</td>';
        statusHTML += '<td><a href=' + i.html_url + '>'+i.commit.message.substr(0,120)+'</a></td>';
        statusHTML += '<td>' + i.commit.author.date.substr(0,10) + '</td>';

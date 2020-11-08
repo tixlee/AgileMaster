@@ -2,24 +2,23 @@
 
 //insert.php
 
-$connect = new PDO('mysql:host=localhost;dbname=caldb', 'root', '');
+$connect = new PDO('mysql:host=localhost;dbname=am', 'root', '');
 
 if(isset($_POST["title"]))
 {
  $query = "
  INSERT INTO events 
- (title, start_event, end_event) 
- VALUES (:title, :start_event, :end_event)
+ (task_name, start_date, due_date) 
+ VALUES (:task_name, :start_date, :due_date)
  ";
  $statement = $connect->prepare($query);
  $statement->execute(
   array(
-   ':title'  => $_POST['title'],
-   ':start_event' => $_POST['start'],
-   ':end_event' => $_POST['end']
+   ':task_name'  => $_POST['title'],
+   ':start_date' => $_POST['start'],
+   ':due_date' => $_POST['end']
   )
  );
 }
-
 
 ?>

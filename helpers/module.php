@@ -386,6 +386,15 @@ function insert_task($task_name, $task_desc, $project_task_num, $board_id, $due_
 	return $result;
 }
 
+//Calendar
+function insert_calendar($task_name, $start_date, $due_date)
+{
+	global $conn;
+	$result = mysqli_query($conn, "INSERT INTO `events` (`task_name`, `start_date`, `due_date`) VALUES ('$task_name', '$start_date', '$due_date')");
+	
+	return $result;
+}
+
 function insert_completion_date($tn, $completion_date)
 {
 	global $conn;

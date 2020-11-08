@@ -2,7 +2,7 @@
 
 //load.php
 
-$connect = new PDO('mysql:host=localhost;dbname=caldb', 'root', '');
+$connect = new PDO('mysql:host=localhost;dbname=am', 'root', '');
 
 $data = array();
 
@@ -18,9 +18,9 @@ foreach($result as $row)
 {
  $data[] = array(
   'id'   => $row["id"],
-  'title'   => $row["title"],
-  'start'   => $row["start_event"],
-  'end'   => $row["end_event"]
+  'title'   => $row["task_name"],
+  'start'   => $row["start_date"],
+  'end'   => $row["due_date"]
  );
 }
 

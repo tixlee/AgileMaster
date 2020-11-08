@@ -34,6 +34,7 @@ if(isset($_POST['create'])){
         $project_task_num = $result->num_rows+1;
     insert_task($task_name, $task_desc, $project_task_num, $board_id, $due_date, $start_date, 1, $created_by);
     insert_task_assignees($user_id);
+	insert_calendar($task_name, $start_date, $due_date);
     echo "<script>window.location.href ='../user/task.php?board_id=$board_id'</script>";
    
     }

@@ -52,7 +52,6 @@ include_once '../resources/links/require.php';
 								<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 									<thead>
 										<tr>
-											<th>Icon</th>
 											<th>Name</th>
 											<th>Commit Message</th>
 											<th>Date</th>
@@ -65,7 +64,6 @@ include_once '../resources/links/require.php';
 											<td></td>
 											<td></td>
 											<td></td>
-											<th></td>
 										</tr> -->
 									</tbody>
 									

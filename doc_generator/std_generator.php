@@ -21,7 +21,7 @@ include_once '../helpers/module.php';
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>SDD Document Generator</title>
+    <title>AgileMaster | SDD Document Generator</title>
 	<?php include('../navigation/head.php');?>
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">

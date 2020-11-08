@@ -7,6 +7,7 @@ include_once '../helpers/module.php';
 include_once '../resources/links/require.php';
 ?>
 
+<?php include 'sendemail.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,11 +30,12 @@ include_once '../resources/links/require.php';
 						<div class="card-header py-3">
 							<h6 class="m-0 font-weight-bold text-primary">Members List</h6>
 						</div>
-              
+						
 						<div class="card-body">
-						<!-- 	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
 							Invite
 							</button>
+							<?php echo $alert; ?>
 							<div class="modal fade" id="myModal" role="dialog">
 								<div class="modal-dialog">
 									
@@ -43,11 +45,12 @@ include_once '../resources/links/require.php';
 											<button type="button" class="close" data-dismiss="modal">&times;</button>
 										</div>
 										<div class="modal-body">
-											<form method="post" action="invitation.php" name="sendinvitation">
+											<form class="contact" action="" method="post">
 												<label for="email">Email Address: 
-													<input text="email" id="email" name="email" class="form-control">
+													<input text="email" id="email" name="email" class="form-control" placeholder="mail@mail.com">
 												</label>
-												<button type="submit" name="submit" class="input-group-text btn_2" id="basic-addon2">Invite</button>
+												<button type="submit" name="submit" class="btn btn-success" id="basic-addon2">Send</button>
+												
 											</form>
 										</div>
 										<div class="modal-footer">
@@ -56,7 +59,7 @@ include_once '../resources/links/require.php';
 									</div>
 								</div>
 							</div> 
-							<br><br> -->
+							<br><br>
 							
 							<div class="table-responsive">
 								<table class="table table-bordered" id="example" width="100%" cellspacing="0">
