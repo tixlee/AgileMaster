@@ -22,6 +22,7 @@ if(isset($_SESSION['user_id']))
   
     <title>AgileMaster | Board</title>
     <?php include('../navigation/head.php');?>
+    <link href="bootstrap-tour.min.css" rel="stylesheet">
 
     
     
@@ -239,7 +240,39 @@ if(isset($_SESSION['user_id']))
 <script src="../dependencies/scripts/scripts.js"></script>
 <script src="../dependencies/navigation/js/adminlte.js"></script>
 
+<script src="bootstrap-tour.min.js"></script>
+<script type="text/javascript">
 
+$(document).ready(function(){
+
+  var button="<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default btn-sm' data-role='prev'>Back</button>&nbsp;<button class='btn btn-default btn-sm' data-role='next'>Next</button><button class='btn btn-default btn-sm' style='float:right;' data-role='end'>Finish</button></div></div>";
+
+  var tour = new Tour({
+  steps: [
+  {
+    element: "#datatable",
+    title: "Title of my step",
+    content: "Content of my step"
+  },
+  {
+    element: "#second",
+    title: "Title of my step",
+    content: "Content of my step"
+  }
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();
+
+$("#tour").click(function(){
+  tour.restart();
+});
+});
+
+</script>
 
 </body>
 </html>
