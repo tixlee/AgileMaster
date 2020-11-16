@@ -64,7 +64,7 @@ if(isset($_POST['create'])){
 
   <?php include('../navigation/topbar.php');?>
 
-  <?php include('../navigation/user_sidebar.php');?>
+  <?php include('../navigation/user/project_sidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

@@ -26,7 +26,7 @@ if(isset($_SESSION['admin_id']))
 
   <?php include('../navigation/topbar_admin.php');?>
 
-  <?php include('../navigation/admin_sidebar.php');?>
+  <?php include('../navigation/dashboard_adminsidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -49,7 +49,7 @@ if(isset($_SESSION['admin_id']))
 								<div class="icon">
 									<i class="fas fa-user user"></i>
 								</div>
-								<a href="all_members.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+								<a href="members.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 						
@@ -113,7 +113,7 @@ if(isset($_SESSION['admin_id']))
 								<div class="icon">
 									<i class="fas fa-bug bug"></i>
 								</div>
-								<a href="bug_report.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+								<a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 						
@@ -129,7 +129,7 @@ if(isset($_SESSION['admin_id']))
 								<div class="icon">
 									<i class="fas fa-comment comment"></i>
 								</div>
-								<a href="bug.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+								<a href="feedback_survey.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 	   
@@ -145,7 +145,7 @@ if(isset($_SESSION['admin_id']))
 								<div class="icon">
 									<i class="fas fa-comment comment"></i>
 								</div>
-								<a href="bug.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+								<a href="contactus_feedback.php" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 	   
@@ -161,7 +161,7 @@ if(isset($_SESSION['admin_id']))
 								<div class="icon">
 									<i class="icofont-simple-smile smile"></i>
 								</div>
-								<a href="bug.php" class="small-box-footer" style="color: black;">More Info <i class="fas fa-arrow-circle-right"></i></a>
+								<a href="#" class="small-box-footer" style="color: black;">More Info <i class="fas fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 	   

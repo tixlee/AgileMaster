@@ -25,7 +25,7 @@
 		<nav class="mt-2" >
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 				<li class="nav-item has-treeview">
-					<a href="../user/dashboard.php" class="nav-link active">
+					<a href="../user/dashboard.php" class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							&nbsp;Dashboard
@@ -52,10 +52,28 @@
 				</li>
 		  
 				<li class="nav-item">
-					<a href="../user/members.php" class="nav-link">
+					<a href="members.php" class="nav-link">
 						<i class="fas fa-users"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;Members
+						</p>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="../calendar/index.php" class="nav-link">
+						<i class="far fa-calendar-alt"></i>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;Calendar
+						</p>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a href="progress.php" class="nav-link">
+						<i class="fas fa-tasks"></i>
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;Progress
 						</p>
 					</a>
 				</li>
@@ -68,25 +86,16 @@
 						</p>
 					</a>
 				</li>
-
-				<li class="nav-item">
-					<a href="../calendar/index.php" class="nav-link">
-						<i class="far fa-calendar-alt"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Calendar
-						</p>
-					</a>
-				</li>
 				
 				<li class="nav-item">
-					<a href="../user/progress.php" class="nav-link">
-						<i class="fas fa-tasks"></i>
+					<a href="../user/bug_report.php" class="nav-link">
+						<i class="fas fa-bug"></i>
 						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Progress
+							&nbsp;&nbsp;&nbsp;&nbsp;Bugs
 						</p>
 					</a>
 				</li>
-		  
+
 				<li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
 						<i class="fab fa-github"></i>
@@ -97,19 +106,19 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="../user/gitreposearch.php" class="nav-link">
+							<a href="gitreposearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Repository Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../user/gitcommitsearch.php" class="nav-link">
+							<a href="gitcommitsearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Commit Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../user/gitissuesearch.php" class="nav-link">
+							<a href="gitissuesearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Issue Search</p>
 							</a>
@@ -117,14 +126,7 @@
 					</ul>
 				</li>
 				
-				<li class="nav-item">
-					<a href="../user/bug_report.php" class="nav-link">
-						<i class="fas fa-bug"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Bugs
-						</p>
-					</a>
-				</li>
+				
 
 				
 				<li class="nav-item">
@@ -232,7 +234,7 @@
 					</ul>
 				</li> -->
 				<li class="nav-item">
-					<a href="../user/feedback.php" class="nav-link">
+					<a href="feedback.php" class="nav-link active">
 						<i class="fas fa-comment-alt"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Feedback Survey
@@ -240,14 +242,7 @@
 					</a>
 				</li>
 				
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						<i class="fas fa-question-circle"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Help
-						</p>
-					</a>
-				</li>
+				
 		  
 				<br ><br ><br >
 			</ul>

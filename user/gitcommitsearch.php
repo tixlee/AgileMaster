@@ -22,7 +22,7 @@ include_once '../resources/links/require.php';
 
 	<div class="wrapper">
 		<?php include('../navigation/topbar.php');?>
-		<?php include('../navigation/user_sidebar.php');?>
+		<?php include('../navigation/user/githubcommit_sidebar.php');?>
 
 		<div class="content-wrapper">
 			<br><br>

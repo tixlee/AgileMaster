@@ -81,7 +81,7 @@ $board_id = $_GET['board_id'];
 
         <?php include('../navigation/topbar.php');?>
 
-        <?php include('../navigation/user_sidebar.php');?>
+        <?php include('../navigation/user/project_sidebar.php');?>
 
         <div class="content-wrapper">
             

@@ -29,7 +29,7 @@ if(isset($_SESSION['user_id']))
 
         <?php include('../navigation/topbar.php');?>
 
-        <?php include('../navigation/user_sidebar.php');?>
+        <?php include('../navigation/user/board_sidebar.php');?>
 
         <div class="content-wrapper">
             

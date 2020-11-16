@@ -42,7 +42,7 @@ if(isset($_POST['report'])){
 <body class="hold-transition sidebar-mini layout-fixed">
 	<div class="wrapper">
 		<?php include('../navigation/topbar.php');?>
-		<?php include('../navigation/user_sidebar.php');?>
+		<?php include('../navigation/user/user_sidebar.php');?>
 
 		<div class="content-wrapper">
 			<br><br>

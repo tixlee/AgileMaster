@@ -115,7 +115,7 @@ include_once '../resources/links/require.php';
 <div class="wrapper">
 	<?php include('../navigation/topbar.php');?>
 
-  <?php include('../navigation/calendar_sidebar.php');?>
+  <?php include('../navigation/user/calendar_sidebar.php');?>
 	<div class="content-wrapper">
 		<section class="content">
 			<div class="container-fluid">

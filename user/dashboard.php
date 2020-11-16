@@ -22,7 +22,7 @@ if(isset($_SESSION['user_id']))
 <body class="hold-transition sidebar-mini layout-fixed">
 	<div class="wrapper">
 		<?php include('../navigation/topbar.php');?>
-		<?php include('../navigation/user_sidebar.php');?>
+		<?php include('../navigation/user/user_sidebar.php');?>
 		<div class="content-wrapper">
 			<br><br>
 			<section class="content">
@@ -98,108 +98,60 @@ if(isset($_SESSION['user_id']))
 							</div>
 						</div>
 						
-						
-						
-						
-						
-
-            <!-- Earnings (Monthly) Card Example 
-            <div class="col-xl-3 col-md-6 mb-4">
-			  <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-lg font-weight-bold text-primary text-uppercase  mb-1">Total Projects</div>
-					  <br>
-                      <div class="h2 mb-0 font-weight-bold text-right text-gray-800">
-                          <?php 
-                            $accounts = getProjectByUser($userId);
-                            echo mysqli_num_rows($accounts); 
-                          ?>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-			
-
-            <!-- Earnings (Monthly) Card Example 
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-lg font-weight-bold text-success text-uppercase mb-1">Total Boards</div>
-					  <br>
-                      <div class="h2 mb-0 font-weight-bold text-right text-gray-800">
-                          <?php 
-                            $pmccounts = getAllProjectManagerAccounts();
-                            echo mysqli_num_rows($pmccounts); 
-                          ?>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Earnings (Monthly) Card Example
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-lg font-weight-bold text-danger text-uppercase mb-1">Project Member Accounts</div>
-                      <div class="h2 mb-0 font-weight-bold text-right text-gray-800">
-                          <?php 
-                            $pmemccounts = getAllProjectMemberAccounts();
-                            echo mysqli_num_rows($pmemccounts); 
-                          ?>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Pending Requests Card Example 
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-lg font-weight-bold text-warning text-uppercase mb-1">Total Bug To Be Fixed</div>
-					  <br>
-                      <div class="h2 mb-0 font-weight-bold text-right text-gray-800">
-                          <?php 
-                            $feedbackform = getAllFeedbackForm();
-                            echo mysqli_num_rows($feedbackform); 
-                          ?>
-                     </div>
-                    </div>
-                    </div>
-                </div>
-              </div>
-            </div> -->
-			
-			
 					</div>
                     
-                    							<!-- DONUT CHART -->
-							<div class="card shadow mb-4">
+                    	
+							
+							
+							<div class="row">
+							<div class="col-md-6">
+							<div class="card card-primary card-outline">
 								<div class="card-header">
-									<h5 class="m-0 card-title text-lg font-weight-bold" style="color: #990021;">Overall Data</h5>
+									 <h3 class="card-title">
+										<i class="far fa-chart-bar"></i>
+										Overall Data
+									</h3>
 
 									<div class="card-tools">
-                                          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                                          </button>
-                                        </div>
+										<button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+										</button>
+									</div>
 								</div>
 								<div class="card-body">
 									<canvas class="donutChart" style="min-height: 300px; height: 300px; max-height: 300px; max-width: 100%;"></canvas>
 								</div>
 							</div>
+						</div>
+						
+							
+						<div class="col-md-6">
+
+						<div class="card card-primary card-outline">
+						  <div class="card-header">
+							<h3 class="card-title">
+							  <i class="far fa-chart-bar"></i>
+							  Bug Chart
+							</h3>
+
+							<div class="card-tools">
+							  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+								<i class="fas fa-minus"></i>
+							  </button>
+							</div>
+						  </div>
+						  <div class="card-body">
+							<div id="bar-chart" style="height: 300px;"></div>
+						  </div>
+
+						</div>
+						</div>
+						</div>
+							
+						
+							
+							
+							
+							
 
                     
                     
@@ -451,6 +403,11 @@ if(isset($_SESSION['user_id']))
 <script src="../dependencies/navigation/js/adminlte.js"></script>
 
 <script src="../dependencies/chart.js/Chart.min.js"></script>
+
+<script src="../dependencies/flot/flot/jquery.flot.js"></script>
+<script src="../dependencies/flot/flot-old/jquery.flot.resize.min.js"></script>
+<script src="../dependencies/flot/flot-old/jquery.flot.pie.min.js"></script>
+
 <script>
   $(function () {
 
@@ -475,7 +432,7 @@ if(isset($_SESSION['user_id']))
 				 <?php echo mysqli_num_rows($getDueDate); ?>,
 ],
 				 
-          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc'],
+          backgroundColor : ['#00c0ef', '#00a65a', '#f56954', '#FFA500'],
         }
       ]
     }
@@ -492,6 +449,46 @@ if(isset($_SESSION['user_id']))
     })
     
   })
+  
+  
+  
+  
+  
+$(function () {
+    
+
+    /*
+     * BAR CHART
+     * ---------
+     */
+
+    var bar_data = {
+      data : [[1,2], [2,2], [3,4]],
+      bars: { show: true }
+    }
+    $.plot('#bar-chart', [bar_data], {
+      grid  : {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+         bars: {
+          show: true, barWidth: 0.5, align: 'center',
+        },
+      },
+      colors: ['#3c8dbc'],
+      xaxis : {
+        ticks: [[1,'Bug Reported By You'], [2,'Bug Assigned To You'], [3,'Bug Resolved By You']]
+      }
+    })
+    /* END BAR CHART */
+
+   
+
+  })
+
+  
 </script>
 </body>
 </html>

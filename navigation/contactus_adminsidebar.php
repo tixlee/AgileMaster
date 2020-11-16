@@ -6,17 +6,17 @@
 				<img src="../resources/images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
 			</div>
 			<div class="info">
-				<a href="../user/profile.php" class="d-block">
+				<a href="#" class="d-block">
 					<strong>
-						<?php
-							$get_user = get_user($userId);
-							$row = mysqli_fetch_array($get_user);
-							echo '
-							<strong> '.$row["name"].' </strong>
-							<span class="carrot"></span>';
+                    <?php
+                        $get_admin = get_admin();
+                        $row = mysqli_fetch_array($get_admin);
+                        echo '
+                           <strong> '.$row["name"].' </strong>
+                           <span class="carrot"></span>';
 
-						?>	
-					</strong>
+                    ?>	
+                </strong>
 				</a>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 		<nav class="mt-2" >
 			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 				<li class="nav-item has-treeview">
-					<a href="../user/dashboard.php" class="nav-link active">
+					<a href="dashboard.php" class="nav-link">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							&nbsp;Dashboard
@@ -34,7 +34,7 @@
 				</li>
 		  
 				<li class="nav-item">
-					<a href="../user/project.php" class="nav-link">
+					<a href="project.php" class="nav-link">
 						<i class="fas fa-project-diagram"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;Projects
@@ -43,7 +43,7 @@
 				</li>
 		  
 				<li class="nav-item">
-					<a href="../user/board.php" class="nav-link">
+					<a href="board.php" class="nav-link">
 						<i class="fab fa-trello"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Board
@@ -52,42 +52,63 @@
 				</li>
 		  
 				<li class="nav-item">
-					<a href="../user/members.php" class="nav-link">
+					<a href="members.php" class="nav-link">
 						<i class="fas fa-users"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;Members
 						</p>
 					</a>
 				</li>
-
+				
 				<li class="nav-item">
-					<a href="../user/upload_files.php" class="nav-link">
+					<a href="upload_files.php" class="nav-link">
 						<i class="fas fa-file-upload"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uploads
 						</p>
 					</a>
 				</li>
-
-				<li class="nav-item">
-					<a href="../calendar/index.php" class="nav-link">
-						<i class="far fa-calendar-alt"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Calendar
-						</p>
-					</a>
-				</li>
 				
 				<li class="nav-item">
-					<a href="../user/progress.php" class="nav-link">
+					<a href="progress.php" class="nav-link">
 						<i class="fas fa-tasks"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Progress
 						</p>
 					</a>
 				</li>
-		  
+				
 				<li class="nav-item has-treeview">
+					<a href="#" class="nav-link active">
+						<i class="fas fa-comment"></i>
+						<p>
+							&nbsp;&nbsp;&nbsp;Feedback
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="feedback_survey.php" class="nav-link">
+								&nbsp;&nbsp;&nbsp; <i class="fas fa-comment"></i>
+								<p>&nbsp;&nbsp;&nbsp;Feedback Survey</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="contactus_feedback.php" class="nav-link active">
+								&nbsp;&nbsp;&nbsp; <i class="fas fa-comment"></i>
+								<p>&nbsp;&nbsp;&nbsp;Contact Us</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="report_issue.php" class="nav-link">
+								&nbsp;&nbsp;&nbsp; <i class="fas fa-comment"></i>
+								<p>&nbsp;&nbsp;&nbsp;System Issue</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+		  
+				<!--<li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
 						<i class="fab fa-github"></i>
 						<p>
@@ -97,46 +118,66 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="../user/gitreposearch.php" class="nav-link">
+							<a href="gitreposearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Repository Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../user/gitcommitsearch.php" class="nav-link">
+							<a href="gitcommitsearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Commit Search</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../user/gitissuesearch.php" class="nav-link">
+							<a href="gitissuesearch.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="fas fa-code-branch"></i>
 								<p>&nbsp;&nbsp;&nbsp;Issue Search</p>
 							</a>
 						</li>
 					</ul>
-				</li>
-				
-				<li class="nav-item">
-					<a href="../user/bug_report.php" class="nav-link">
+				</li>-->
+
+				<!--<li class="nav-item has-treeview">
+					<a href="#" class="nav-link">
 						<i class="fas fa-bug"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Bugs
+							<i class="fas fa-angle-left right"></i>
 						</p>
 					</a>
-				</li>
-
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="bugtest.php" class="nav-link">
+								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+								<p>&nbsp;&nbsp;&nbsp;Bug Testing</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="bugtest.php" class="nav-link">
+								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+								<p>&nbsp;&nbsp;&nbsp;Bug Reporting</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="bugtest.php" class="nav-link">
+								&nbsp;&nbsp;&nbsp;<i class="fas fa-bug"></i>
+								<p>&nbsp;&nbsp;&nbsp;Bug Fixing</p>
+							</a>
+						</li>
+					</ul>
+				</li>-->
 				
-				<li class="nav-item">
+				<!--<li class="nav-item">
 					<a href="../timetracker/timetracker.php" class="nav-link">
 						<i class="far fa-clock"></i>
 						<p>
 							&nbsp;&nbsp;&nbsp;&nbsp;Time Tracker
 						</p>
 					</a>
-				</li>
+				</li>-->
 				
-				<li class="nav-item has-treeview">
+				<!--<li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
 						<i class="far fa-file-alt"></i>
 						<p>
@@ -146,39 +187,39 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="meeting_minutes.php" class="nav-link">
+							<a href="../doc_generator/meeting_minutes.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;Meeting Minutes</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="meeting_agenda.php" class="nav-link">
+							<a href="../doc_generator/meeting_agenda.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;Meeting Agenda</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="srs_generator.php" class="nav-link">
+							<a href="../doc_generator/srs_generator.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;SRS Report</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="sdd_generator.php" class="nav-link">
+							<a href="../doc_generator/sdd_generator.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;SDD Report</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="std_generator.php" class="nav-link">
+							<a href="../doc_generator/std_generator.php" class="nav-link">
 								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;STD Report</p>
 							</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 			  
-				<li class="nav-item has-treeview">
+				<!--<li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
 						<i class="fas fa-pencil-ruler"></i>
 						<p>
@@ -189,18 +230,18 @@
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
 							<a href="../diagrams/flowchart.php" class="nav-link">
-								&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-ruler"></i>
+								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;Flowchart Diagram</p>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="../diagrams/pageflow.php" class="nav-link">
-								&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-ruler"></i>
+								&nbsp;&nbsp;&nbsp;<i class="far fa-file-pdf"></i>
 								<p>&nbsp;&nbsp;&nbsp;PageFlow Diagram</p>
 							</a>
 						</li>
 					</ul>
-				</li>
+				</li>-->
 		  
 				<!-- <li class="nav-item has-treeview">
 					<a href="#" class="nav-link">
@@ -231,25 +272,8 @@
 						</li>
 					</ul>
 				</li> -->
-				<li class="nav-item">
-					<a href="../user/feedback.php" class="nav-link">
-						<i class="fas fa-comment-alt"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Feedback Survey
-						</p>
-					</a>
-				</li>
-				
-				<li class="nav-item">
-					<a href="#" class="nav-link">
-						<i class="fas fa-question-circle"></i>
-						<p>
-							&nbsp;&nbsp;&nbsp;&nbsp;Help
-						</p>
-					</a>
-				</li>
-
-				<br ><br ><br >
+		  
+				<br><br><br>
 			</ul>
 		</nav>
     </div>

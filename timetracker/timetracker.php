@@ -23,7 +23,7 @@ include_once '../resources/links/require.php';
 
   <?php include('../navigation/topbar.php');?>
 
-  <?php include('../navigation/timetracker_sidebar.php');?>
+  <?php include('../navigation/user/timetracker_sidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

@@ -36,7 +36,7 @@ include_once '../helpers/module.php';
 
   <?php include('../navigation/topbar.php');?>
 
-  <?php include('../navigation/docgenerator_sidebar.php');?>
+  <?php include('../navigation/user/docgeneratorsdd_sidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

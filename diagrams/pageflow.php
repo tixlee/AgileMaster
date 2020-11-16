@@ -328,7 +328,7 @@ include_once '../helpers/module.php';
 
   <?php include('../navigation/topbar.php');?>
 
-  <?php include('../navigation/diagram_sidebar.php');?>
+  <?php include('../navigation/user/diagrampageflow_sidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

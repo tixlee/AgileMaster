@@ -644,7 +644,7 @@ include_once 'helpers/module.php';
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="200">
 						<div class="member-img">
-							<img src="resources/images/team/team2.jpg" class="img-fluid" alt="">
+							<img src="resources/images/team/lee.jpeg" class="img-fluid" alt="">
 							<!-- <div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -653,7 +653,7 @@ include_once 'helpers/module.php';
 							</div> -->
 						</div>
 						<div class="member-info">
-							<h4>Jia Jun Lee</h4>
+							<h4>Lee Jia Jun</h4>
 							<span>Backend Developer, UX Developer</span>
 						</div>
 					</div>
@@ -662,7 +662,7 @@ include_once 'helpers/module.php';
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="300">
 						<div class="member-img">
-							<img src="resources/images/team/team3.jpg" class="img-fluid" alt="">
+							<img src="resources/images/team/jason.jpeg" class="img-fluid" alt="">
 							<!-- <div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -680,7 +680,7 @@ include_once 'helpers/module.php';
 				<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
 					<div class="member" data-aos="fade-up" data-aos-delay="400">
 						<div class="member-img">
-							<img src="resources/images/team/team4.jpg" class="img-fluid" alt="">
+							<img src="resources/images/team/bong.jpeg" class="img-fluid" alt="">
 							<!-- <div class="social">
 								<a href=""><i class="icofont-twitter"></i></a>
 								<a href=""><i class="icofont-facebook"></i></a>
@@ -689,7 +689,7 @@ include_once 'helpers/module.php';
 							</div> -->
 						</div>
 						<div class="member-info">
-							<h4>BONG SIAW ZHEN</h4>
+							<h4>Bong Siaw Zhen</h4>
 							<span>Ui Designer, Frontend Developer</span>
 						</div>
 					</div>

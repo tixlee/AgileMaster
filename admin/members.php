@@ -21,7 +21,7 @@ include_once '../helpers/module.php';
 
   <?php include('../navigation/topbar_admin.php');?>
 
-  <?php include('../navigation/admin_sidebar.php');?>
+  <?php include('../navigation/member_adminsidebar.php');?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

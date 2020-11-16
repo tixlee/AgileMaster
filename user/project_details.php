@@ -68,7 +68,7 @@ if(isset($_POST['switch'])){
 
         <?php include('../navigation/topbar.php');?>
 
-        <?php include('../navigation/user_sidebar.php');?>
+        <?php include('../navigation/user/project_sidebar.php');?>
 
         <div class="content-wrapper">
             
