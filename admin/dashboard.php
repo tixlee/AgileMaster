@@ -124,7 +124,7 @@ if(isset($_SESSION['admin_id']))
 										$getAllFeedbackForm = getAllFeedbackForm();
 										echo mysqli_num_rows($getAllFeedbackForm); 
 										?></h3>
-									<p>Total Feedback Survey Received</p>
+									<p>Total Feedback Survey</p>
 								</div>
 								<div class="icon">
 									<i class="fas fa-comment comment"></i>
@@ -140,7 +140,7 @@ if(isset($_SESSION['admin_id']))
 										$getAllContactUsFeedbackForm = getAllContactUsFeedbackForm();
 										echo mysqli_num_rows($getAllContactUsFeedbackForm); 
 										?></h3>
-									<p>Total Contact Us Feedback Received</p>
+									<p>Total Contact Us Feedback</p>
 								</div>
 								<div class="icon">
 									<i class="fas fa-comment comment"></i>

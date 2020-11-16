@@ -103,10 +103,10 @@ if(isset($_POST['switch'])){
                                       <a class="nav-link active text-lg font-weight-bold" id="home-tab-md" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md" aria-selected="true">Project Description</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                      <a class="nav-link  text-lg font-weight-bold" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">Boards</a>
+										<a class="nav-link  text-lg font-weight-bold" id="contact-tab-md" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md" aria-selected="false">Team Members</a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
-                                      <a class="nav-link  text-lg font-weight-bold" id="contact-tab-md" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md" aria-selected="false">Team Members</a>
+                                      <a class="nav-link  text-lg font-weight-bold" id="profile-tab-md" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">Boards</a>
                                     </li>
                                   </ul>
                                   <div class="tab-content card pt-3" id="myTabContentMD">

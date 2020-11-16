@@ -340,7 +340,7 @@ function insert_user_created_project($user_id)
 function update_user_created_project($project_id, $user_id)
 {
 	global $conn;
-	$result = mysqli_query($conn, "UPDATE `user_created_project` SET `user_id` = '".$user_id."' WHERE `project_id` = '".$project_id."'");
+	$result = mysqli_query($conn, "UPDATE `user_created_project` SET `user_id` = '".$user_id."' WHERE `created_proj_id` = '".$project_id."'");
 }
 
 
@@ -398,6 +398,14 @@ function getBoardByProjectAdmin($board_id)
 {
 	global $conn;
 	$result = mysqli_query($conn, "SELECT * FROM `task` NATURAL JOIN `board` NATURAL JOIN `users` WHERE `board_id` = '$board_id'");
+
+	return $result;
+}
+
+function getBoardByProjectAdmins($userId)
+{
+	global $conn;
+	$result = mysqli_query($conn, "SELECT * FROM `board` NATURAL JOIN `project` NATURAL JOIN `users` WHERE `user_id` = '$userId'");
 
 	return $result;
 }
@@ -764,7 +772,7 @@ function getAllFeedbackForm()
 function getHappyUsers()
 {
 	global $conn;
-	$result = mysqli_query($conn, "SELECT * FROM `feedback_survey` WHERE `rate` >= 4");
+	$result = mysqli_query($conn, "SELECT * FROM `feedback_survey` WHERE `rate` = 'Very Good' OR `rate` = 'Excellent'");
 
 	return $result;
 }

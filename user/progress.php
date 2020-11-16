@@ -70,7 +70,7 @@ if(isset($_SESSION['user_id']))
                                 
                                  
                                 <div class="table-responsive">
-									<table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
+									<table class="table table-bordered" id="dataTables" width="100%" cellspacing="0">
                                       <thead>
                                         <tr>
 											<th>Board Name</th>
@@ -141,9 +141,9 @@ if(isset($_SESSION['user_id']))
                                         
                                     </table>
 									
-									<br><br>
+									<br><hr><br>
 								
-                                    <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
+                                    <table class="table table-bordered" id="dataTables" width="100%" cellspacing="0">
                                       <thead>
                                         <tr>
                                             <th >Board Name</th>
@@ -239,7 +239,16 @@ if(isset($_SESSION['user_id']))
 <script src="../dependencies/scripts/scripts.js"></script>
 <script src="../dependencies/navigation/js/adminlte.js"></script>
 
-
+<script>
+$(document).ready(function() {
+    $('table#dataTables').DataTable( {
+        fixedHeader: {
+            header: true,
+            footer: true
+        }
+    } );
+} );
+</script>
 
 </body>
 </html>

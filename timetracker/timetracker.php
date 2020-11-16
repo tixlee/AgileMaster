@@ -45,7 +45,7 @@ include_once '../resources/links/require.php';
                 <!-- Modal -->
                 
               <div class="table-responsive">
-                <table class="table table-bordered" id="" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTables" width="100%" cellspacing="0">
                   <thead id="project-table">
                     <tr>
 						<th style="text-align: center;">Project</th>
@@ -77,36 +77,18 @@ include_once '../resources/links/require.php';
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
+
 <script src="../dependencies/navigation/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
 <script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script src="../dependencies/navigation/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-
-   <!-- Bootstrap core JavaScript-->
-
-  <!-- Core plugin JavaScript-->
-  <script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../dependencies/scripts/sb-admin-2.min.js"></script>
-    
-  <!-- Page level plugins -->
-  <script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="../dependencies/scripts/datatables-demo.js"></script>
-    
+<script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../dependencies/scripts/sb-admin-2.min.js"></script>
+<script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../dependencies/scripts/datatables-demo.js"></script> 
 <script src="../dependencies/scripts/scripts.js"></script>
-
-<!-- jQuery -->
-<!-- Bootstrap 4 -->
-
-
-<!-- AdminLTE App -->
 <script src="../dependencies/navigation/js/adminlte.js"></script>
+
 
 </body>
 </html>

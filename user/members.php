@@ -12,8 +12,8 @@ include_once '../helpers/module.php';
 <head>
   <title>AgileMaster | Members</title>
 	<?php include('../navigation/head.php');?>
-	
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
+
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 	<div class="wrapper">
@@ -86,7 +86,7 @@ include_once '../helpers/module.php';
                                 
                                 
                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <table class="table table-bordered" id="dataTables" width="100%" cellspacing="0">
                                       <thead>
                                         <tr>
                                             <th >Member Name</th>
@@ -157,38 +157,26 @@ include_once '../helpers/module.php';
 		</aside>
 	</div>
 
-
-
-
-<!-- jQuery -->
 <script src="../dependencies/navigation/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
 <script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script src="../dependencies/navigation/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-
-   <!-- Bootstrap core JavaScript-->
-
-  <!-- Core plugin JavaScript-->
-  <script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../dependencies/scripts/sb-admin-2.min.js"></script>
-    
-  <!-- Page level plugins -->
-  <script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="../dependencies/scripts/datatables-demo.js"></script>
-    
+<script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../dependencies/scripts/sb-admin-2.min.js"></script>
+<script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../dependencies/scripts/datatables-demo.js"></script>  
 <script src="../dependencies/scripts/scripts.js"></script>
-
-<!-- jQuery -->
-<!-- Bootstrap 4 -->
-
-
-<!-- AdminLTE App -->
 <script src="../dependencies/navigation/js/adminlte.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('table#dataTables').DataTable( {
+        fixedHeader: {
+            header: true,
+            footer: true
+        }
+    } );
+} );
+</script>
 </body>
 </html>

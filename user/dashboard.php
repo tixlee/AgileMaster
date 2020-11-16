@@ -17,7 +17,7 @@ if(isset($_SESSION['user_id']))
 <head>
 	<title>AgileMaster | Dashboard</title>
 	<?php include('../navigation/head.php');?>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
+	
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 	<div class="wrapper">
@@ -49,8 +49,8 @@ if(isset($_SESSION['user_id']))
 							<div class="small-box bg-success">
 								<div class="inner">
 									<h3><?php 
-											$getBoardByProjectAdmin = getBoardByProjectAdmin($userId);
-											$total_boards = mysqli_num_rows($getBoardByProjectAdmin); 
+											$getBoardByProjectAdmins = getBoardByProjectAdmins($userId);
+											$total_boards = mysqli_num_rows($getBoardByProjectAdmins); 
 											echo $total_boards;
 											?></h3>
 									<p>Total Boards</p>
@@ -285,7 +285,7 @@ if(isset($_SESSION['user_id']))
 						<div class="card-body">
 							<div class="table-responsive">
 
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="example" width="100%" cellspacing="0">
 							
                                     <thead>
                                     <tr>
@@ -369,41 +369,31 @@ if(isset($_SESSION['user_id']))
 
 
 <!-- ./wrapper -->
+<?php
+$bugreported = getCreatedBugByUserId($userId);
+?>
 
-<!-- jQuery -->
+<?php
+$bugassigned = getAssignedBugByUserId($userId);
+?>
+
+<?php
+$bugresolved = getResolvedBugByUserId($userId);
+?>
+
+
 <script src="../dependencies/navigation/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
 <script src="../dependencies/navigation/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script src="../dependencies/navigation/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-
-
-   <!-- Bootstrap core JavaScript-->
-
-  <!-- Core plugin JavaScript-->
-  <script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../dependencies/scripts/sb-admin-2.min.js"></script>
-    
-  <!-- Page level plugins -->
-  <script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="../dependencies/scripts/datatables-demo.js"></script>
-    
+<script src="../dependencies/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../dependencies/scripts/sb-admin-2.min.js"></script>
+<script src="../dependencies/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../dependencies/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../dependencies/scripts/datatables-demo.js"></script>  
 <script src="../dependencies/scripts/scripts.js"></script>
-
-<!-- jQuery -->
-<!-- Bootstrap 4 -->
-
-
-<!-- AdminLTE App -->
 <script src="../dependencies/navigation/js/adminlte.js"></script>
 
 <script src="../dependencies/chart.js/Chart.min.js"></script>
-
 <script src="../dependencies/flot/flot/jquery.flot.js"></script>
 <script src="../dependencies/flot/flot-old/jquery.flot.resize.min.js"></script>
 <script src="../dependencies/flot/flot-old/jquery.flot.pie.min.js"></script>
@@ -427,7 +417,7 @@ if(isset($_SESSION['user_id']))
       datasets: [
         {
           data: [<?php echo mysqli_num_rows($projects); ?>,
-				 <?php echo mysqli_num_rows($getBoardByProjectAdmin); ?>,
+				 <?php echo mysqli_num_rows($getBoardByProjectAdmins); ?>,
 				 <?php echo mysqli_num_rows($bug); ?>,
 				 <?php echo mysqli_num_rows($getDueDate); ?>,
 ],
@@ -450,9 +440,9 @@ if(isset($_SESSION['user_id']))
     
   })
   
-  
-  
-  
+
+
+
   
 $(function () {
     
@@ -463,7 +453,7 @@ $(function () {
      */
 
     var bar_data = {
-      data : [[1,2], [2,2], [3,4]],
+      data : [[1,<?php echo mysqli_num_rows($bugreported); ?>], [2,<?php echo mysqli_num_rows($bugassigned); ?>], [3,<?php echo mysqli_num_rows($bugresolved); ?>]],
       bars: { show: true }
     }
     $.plot('#bar-chart', [bar_data], {
@@ -489,6 +479,14 @@ $(function () {
   })
 
   
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#example').DataTable( {
+        buttons: []
+    } );
+	} );
 </script>
 </body>
 </html>
