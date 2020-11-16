@@ -405,7 +405,7 @@ function getBoardByProjectAdmin($board_id)
 function getBoardByProjectAdmins($userId)
 {
 	global $conn;
-	$result = mysqli_query($conn, "SELECT * FROM `board` NATURAL JOIN `project` NATURAL JOIN `users` WHERE `user_id` = '$userId'");
+	$result = mysqli_query($conn, "SELECT * FROM `board` NATURAL JOIN `project` NATURAL JOIN `user_project` WHERE `user_id` = '$userId'");
 
 	return $result;
 }
