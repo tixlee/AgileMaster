@@ -334,7 +334,7 @@ include_once '../helpers/module.php';
 						
 						<div class="form-row">
 							
-							<button class="btn btn-info" type="submit" name="send">Generate</button>
+							<button class="btn btn-success" type="submit" name="send">Generate</button>
 						</div>
 						
                     </form>
