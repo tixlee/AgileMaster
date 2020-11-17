@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
 		<li>Dynamic Calendar View</li>
 	</ul> <br>
 	<p><b>Click the link below to join us:</b></p>
-	<p><a href='https://agilemaster.000webhostapp.com/'>https://agilemaster.000webhostapp.com/</a></p> <br>
+	<p><a href='https://www.agilemaster.net/'>https://www.agilemaster.net/</a></p> <br>
 	<p><b>Regards,</b></p>
 	<p style='font-family: Brush Script MT';><b>Agile Master Management.</b></p>
 	<img src='cid:logo' style='width: 150px';>
