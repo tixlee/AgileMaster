@@ -64,7 +64,7 @@ if(isset($_POST['create'])){
 								<img src="../resources/images/logo.png" alt="logo" class="logo">
 							</div>
 							<p class="login-card-description">Create your account</p>
-							<form method="post" action="register.php">
+							<form method="post" enctype="multipart/form-data">
 								<div class="form-group">
 									<label for="name" class="sr-only">Full Name</label>
 									<input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required autocomplete="off">
