@@ -33,18 +33,11 @@ if(isset($_POST['create'])){
     $proj = mysqli_query($conn, "SELECT project_name FROM `project` WHERE `project_name` = '$project_name'");
     $reslt = mysqli_num_rows($proj);
     
-    if($reslt >0){
-        echo "<script>alert('Project Name is already exist! Please choose a different name.');</script>";
-        
-    }else{
-        
-       insert_project($project_name, $project_description);
+    insert_project($project_name, $project_description);
         insert_user_project($user_id);
         insert_user_created_project($user_id);
         update_role($user_id, $role);
         echo "<script>window.location.href ='../user/project.php'</script>";
-        
-    }
 
 }
 

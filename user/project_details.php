@@ -262,7 +262,7 @@ if(isset($_POST['switch'])){
                                             
                                             
                                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mySecondModal">
-                                                    INVITE NEW MEMBER
+                                                    <i class="far fa-envelope"></i> INVITE MEMBER
                                                     </button>
                                                     <?php echo $alert; ?>
                                                     <div class="modal fade" id="mySecondModal" role="dialog">
