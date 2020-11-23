@@ -311,7 +311,7 @@
                                                    <center>Action</center>
                                                 </th>
                                                 <th >
-                                                   <center>Switch Project Manager To</center>
+                                                   <center>Switch Role</center>
                                                 </th>
                                                 <?php 
                                                    }

@@ -26,7 +26,7 @@
 
 
 $current_location = $_SERVER['REQUEST_URI'];
-if($current_location != "/www.agilemaster.net" && $current_location != "/www.agilemaster.net/main/login.php")
+if($current_location != "/agilemaster" && $current_location != "/agilemaster/main/login.php")
 {
     if(!isset($_SESSION['user_id']))
     {
