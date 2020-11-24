@@ -2,10 +2,6 @@
 Agile Software Project Management System
 
 
-Gmail:
-agilemaster2020@gmail.com
-agilemaster123
-
 This is a Final Year Project (Agile Master) Software created by:
 
 Lee Jia Jun (101210855) Jason Goh Wei Ting(101210787) Ahmed Tarek Abdelraouf (100089038) Bong Siaw Zhen (101209109)
@@ -22,3 +18,7 @@ Click the created database and click import and choose the am.sql in the Databas
 Click Go!
 Type localhost/AgileMaster and enter.
 Enjoy.
+
+Email: Gmail
+agilemaster2020@gmail.com
+agilemaster123
