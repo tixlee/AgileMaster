@@ -60,7 +60,4 @@ include_once '../validation/loginvalidation.php';
 </body>
 </html>
 
-<?php 
-include_once("../dependencies/scripts/scripts.js");
-?>
 
