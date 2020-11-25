@@ -103,7 +103,3 @@ if(isset($_POST['change']))
        
 </body>
 </html>
-
-<?php 
-include_once("../dependencies/scripts/scripts.js");
-?>
