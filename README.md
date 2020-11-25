@@ -1,8 +1,6 @@
 # Agile Master
-Agile Software Project Management System
 
-
-This is a Final Year Project (Agile Master) Software created by:
+This is a Final Year Project (Agile Software Project Management System) Software created by:
 
 Lee Jia Jun (101210855) Jason Goh Wei Ting(101210787) Ahmed Tarek Abdelraouf (100089038) Bong Siaw Zhen (101209109)
 
