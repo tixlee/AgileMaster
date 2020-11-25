@@ -154,6 +154,3 @@ if(isset($_POST['create'])){
 </body>
 </html>
 
-<?php 
-include_once("../dependencies/scripts/scripts.js");
-?>
