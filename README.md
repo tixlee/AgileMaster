@@ -17,7 +17,7 @@ Start Apache and MySQL in XAMPP Control Panel.
 Go browser and type localhost/phpmyadmin.
 
 
-Create new database named craftpophouse_db.
+Create new database named am.
 
 
 Click the created database and click import and choose the am.sql in the Database folder.
