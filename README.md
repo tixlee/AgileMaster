@@ -9,12 +9,26 @@ There are few steps before this website can be used properly.
 Import Database.
 
 Move the file into xampp/htdocs/ and paste it in that folder.
+
+
 Start Apache and MySQL in XAMPP Control Panel.
+
+
 Go browser and type localhost/phpmyadmin.
+
+
 Create new database named craftpophouse_db.
+
+
 Click the created database and click import and choose the am.sql in the Database folder.
+
+
 Click Go!
+
+
 Type localhost/AgileMaster and enter.
+
+
 Enjoy.
 
 Email: Gmail
