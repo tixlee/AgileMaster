@@ -41,30 +41,6 @@ if(isset($_POST['change']))
 </head>
     
 <body id="login">
-
-	<header id="header" class="fixed-top">
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-xl-10 d-flex align-items-center">
-					<h1 class="logo mr-auto"><a href="../index.php"><img src="../resources/images/logo.png" alt=""></a></h1>
-					<nav class="nav-menu d-none d-lg-block">
-						<ul>
-							<li class="active"><a href="../index.php">Home</a></li>
-							<li><a href="../index.php#about">About</a></li>
-							<li><a href="../index.php#services">Tools</a></li>
-							<li><a href="../index.php#testimonials">User Review</a></li>
-							<li><a href="../index.php#pricing">Pricing</a></li>
-							<li><a href="../index.php#faq">FAQ</a></li>
-							<li><a href="../index.php#team">Team</a></li>
-							<li><a href="../index.php#contact">Contact</a></li>
-							<li><a href="login.php">Login</a></li>
-						</ul>
-					</nav>
-					<a href="register.php" class="get-started-btn scrollto">Get Started</a>
-				</div>
-			</div>
-		</div>
-	</header>
     
     <main class="d-flex align-items-center min-vh-100 py-3 py-md-0 section-bg">
 		<div class="container">
