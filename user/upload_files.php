@@ -172,26 +172,12 @@
                                  </tr>
                               </thead>
                               <tbody>
-                                 <?php 
-                                    //                            $getProjects = getProjects();
-                                    //                            $pRow = mysqli_fetch_array($getProjects);
-                                    //                            $project_id = $pRow['project_id'];
-                                    //                                        
-                                    //                     
-                                    //                            $getStorageInfo = getStorageInfo();
-                                    //                            $fRow = mysqli_fetch_array($getStorageInfo);
-                                    //                            $getStorageInfoProject = getStorageInfoProject($userId);
-                                    //                            
-                                    //                            while($oRow = mysqli_fetch_array($getStorageInfoProject))
-                                    //                            {
-                                    //                            $u_query = $conn->query("SELECT * FROM `user_created_project` WHERE `created_proj_id` = '$row[project_id]'") or die(mysqli_error());
-                                    //                            $u_fetch = $u_query->fetch_array();
-                                    //                            
-                                                                $query = $conn->query("SELECT * FROM `file_storage` NATURAL JOIN `project` NATURAL JOIN `users` WHERE `project_id` = '$row[project_id]'") or die(mysqli_error());
-                                                                while($b_query = $query->fetch_array())
-                                                                {
+                                 <?php                         
+                                    $query = $conn->query("SELECT * FROM `file_storage` NATURAL JOIN `project` NATURAL JOIN `users` WHERE `project_id` = '$row[project_id]'") or die(mysqli_error());
+                                    while($b_query = $query->fetch_array())
+                                    {
                                                                     
-                                                        ?>
+                                 ?>
                                  <tr class='tbl-link' href="../upload/file_storage/">
                                     <td><?php echo $b_query['file_name']?></td>
                                     <td><?php echo $b_query['file']?></td>
