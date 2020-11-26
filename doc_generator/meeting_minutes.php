@@ -30,14 +30,14 @@ include_once '../helpers/module.php';
 	<?php include('../navigation/user/docgeneratorminutes_sidebar.php');?>
 
 	<div class="content-wrapper">
-		</br></br>
+		<br ><br >
 			<section class="content">
 				<div class="container-fluid">
 					<div class="card shadow mb-4">
 						<div class="card-body">
 							<div class="card-header py-3">
 								<h4 class="m-4 font-weight-bold">Meeting Minutes Generator</h4>
-								<h6 class="m-4 font-weight-bold">Meeting minutes serve as a record of what was discussed and decided in a meeting, what actions must be taken, who must take them and when.</h>
+								<h6 class="m-4 font-weight-bold">Meeting minutes serve as a record of what was discussed and decided in a meeting, what actions must be taken, who must take them and when.</h6>
 							</div>
 					
 							<form method="POST" name="createDoc" id="DocCreator" action="meetminutes_report_generator.php" enctype="multipart/form-data">
