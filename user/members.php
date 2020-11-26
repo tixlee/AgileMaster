@@ -21,7 +21,7 @@
             <section class="content">
                <div class="container-fluid">
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-                  Invite
+                  <i class="far fa-envelope"></i> INVITE MEMBER
                   </button>
                   <?php echo $alert; ?>
                   <div class="modal fade" id="myModal" role="dialog">
