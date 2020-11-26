@@ -321,7 +321,7 @@ include_once '../helpers/module.php';
 	<?php include('../navigation/user/diagrampageflow_sidebar.php');?>
 
 	<div class="content-wrapper">
-		</br></br>
+		<br ><br>
 
 		<section class="content">
 			<div class="container-fluid">
