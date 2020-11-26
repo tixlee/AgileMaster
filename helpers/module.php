@@ -204,18 +204,6 @@ function archive_project($project_id, $newstatus)
 }
 
 
-//function deleteProjectFromUserProject($project_id)
-//{
-//	global $conn;
-//	$result = mysqli_query($conn, "DELETE FROM `user_project`  WHERE `project_id` = '".$project_id."'");
-//}
-//
-//function deleteProjectFromUserCreatedProject($project_id)
-//{
-//	global $conn;
-//	$result = mysqli_query($conn, "DELETE FROM `user_created_project`  WHERE `project_id` = '".$project_id."'");
-//}
-
 
 
 // user_project
@@ -264,14 +252,6 @@ function getProject()
 	return $result;
 }
 
-
-//function getAllProjects()
-//{
-//	global $conn;
-//	$result = mysqli_query($conn, "SELECT project.project_name, project.project_description FROM `project` INNER JOIN `user_project` ON project.project_id=user_project.project_id");
-//
-//	return $result;
-//}
 
 
 
@@ -352,14 +332,6 @@ function update_user_created_project($project_id, $user_id)
 }
 
 
-
-//function get_user_created_project($user_id)
-//{
-//	global $conn;
-//	$result = mysqli_query($conn, "SELECT * FROM `user_created_project` NATURAL JOIN `user_project` WHERE `user_id` = '$user_id'");
-//
-//	return $result;
-//}
 
 function getUserCreatedProject($user_id)
 {
@@ -644,7 +616,7 @@ function getDueDate($userId)
 }
 
 
-//CVomment Section in Task Details Page
+//Comment Section in Task Details Page
 
 
 function insert_comment_task($user_id, $task_id, $comment)
